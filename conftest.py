@@ -12,6 +12,7 @@ def chrome_options():
     options.add_argument("--start-maximized")
     return options
 
+
 @pytest.fixture
 def driver(chrome_options):
     driver = webdriver.Chrome(options=chrome_options)
@@ -19,15 +20,18 @@ def driver(chrome_options):
     yield driver
     driver.quit()
 
+
 @pytest.fixture
 def wait(driver):
     wait = WebDriverWait(driver, timeout=10)
     return wait
 
+
 @pytest.fixture
 def fake_login():
     fake = Faker()
     return fake.name()
+
 
 @pytest.fixture
 def fake_password():
