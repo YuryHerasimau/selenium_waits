@@ -1,19 +1,14 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 import time
-from speed_test import speed_test
-
-
-BASE_URL = "https://victoretc.github.io/selenium_waits/"
-
-
-# See also: https://github.com/victoretc/selenium_automation_course/blob/main/lesson3/readme.md
+from utils.speed_test import speed_test
+from utils.urls import base_url
 
 
 @speed_test
 def test_register_with_explicit_waits(driver, wait, fake_login, fake_password):
     """Using Explicit waits and Expected Conditions"""
-    driver.get(BASE_URL)
+    driver.get(base_url)
     actual_title = driver.find_element(By.XPATH, "/html/body/h1").text
     expected_title = "Практика с ожиданиями в Selenium"
     assert (
@@ -49,7 +44,7 @@ def test_register_with_explicit_waits(driver, wait, fake_login, fake_password):
 @speed_test
 def test_register_with_implicit_waits(driver, fake_login, fake_password):
     """Using Implicit waits"""
-    driver.get(BASE_URL)
+    driver.get(base_url)
     actual_title = driver.find_element(By.XPATH, "/html/body/h1").text
     expected_title = "Практика с ожиданиями в Selenium"
     assert (
@@ -83,7 +78,7 @@ def test_register_with_implicit_waits(driver, fake_login, fake_password):
 @speed_test
 def test_register_with_time_sleep(driver, fake_login, fake_password):
     """Using time.sleep()"""
-    driver.get(BASE_URL)
+    driver.get(base_url)
     actual_title = driver.find_element(By.XPATH, "/html/body/h1").text
     expected_title = "Практика с ожиданиями в Selenium"
     assert (
