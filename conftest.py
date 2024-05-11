@@ -44,5 +44,4 @@ def fake_password():
 
 @pytest.fixture
 def login_page(driver):
-    page = LoginPage(driver, base_url)
-    return page
+    return LoginPage(driver, base_url)

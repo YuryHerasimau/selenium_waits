@@ -4,31 +4,27 @@ from selenium.webdriver.common.by import By
 
 class LoginPage(BasePage):
 
-    _start_button = (By.XPATH, '//*[@id="startTest"]')
-    _login_field = (By.XPATH, '//*[@id="login"]')
-    _password_field = (By.XPATH, '//*[@id="password"]')
-    _agree_button = (By.XPATH, '//*[@id="agree"]')
-    _registration_button = (By.XPATH, '//*[@id="register"]')
-    _loader = (By.XPATH, '//*[@id="loader"]')
-    _success_message = (By.XPATH, '//*[@id="successMessage"]')
-
     def start_button(self):
-        return self.is_visible(LoginPage._start_button)
+        return self.is_visible((By.XPATH, '//*[@id="startTest"]'))
 
     def login_field(self):
-        return self.is_visible(LoginPage._login_field)
+        self.is_visible((By.XPATH, '//*[@id="login"]')).send_keys("login")
+        return self
 
     def password_field(self):
-        return self.is_visible(LoginPage._password_field)
+        self.is_visible((By.XPATH, '//*[@id="password"]')).send_keys("password")
+        return self
 
     def agree_button(self):
-        return self.is_visible(LoginPage._agree_button)
+        self.is_visible((By.XPATH, '//*[@id="agree"]')).click()
+        return self
 
     def registration_button(self):
-        return self.is_visible(LoginPage._registration_button)
+        self.is_visible((By.XPATH, '//*[@id="register"]')).click()
+        return self
 
     def loader(self):
-        return self.is_visible(LoginPage._loader)
+        return self.is_visible((By.XPATH, '//*[@id="loader"]'))
 
     def success_message(self):
-        return self.is_visible(LoginPage._success_message)
+        return self.is_visible((By.XPATH, '//*[@id="successMessage"]'))

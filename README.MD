@@ -40,7 +40,7 @@ The user successfully completes the registration process, sees the loading indic
 
 ### Success Criteria
 
-The message "You have been successfully registered" is displayed on the screen.
+The message "Вы успешно зарегистрированы!" is displayed on the screen.
 
 
 ## Getting Started
