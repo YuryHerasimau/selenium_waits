@@ -48,7 +48,7 @@ To use and run tests, follow these steps:
 
 1. Clone the to your local machine using the following command:
 ```
-git clone https://github.com/YuryHerasimau/<repo>.git
+git clone https://github.com/YuryHerasimau/selenium_waits.git
 ```
 2. Navigate to the cloned repository directory on your local machine.
 3. Install the required dependencies by running the following command:
