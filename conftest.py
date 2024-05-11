@@ -4,6 +4,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 import pytest
 from faker import Faker
 
+from pages.auth_page import LoginPage
+from utils.urls import base_url
+
 
 @pytest.fixture
 def chrome_options():
@@ -37,3 +40,9 @@ def fake_login():
 def fake_password():
     fake = Faker()
     return fake.text()
+
+
+@pytest.fixture
+def login_page(driver):
+    page = LoginPage(driver, base_url)
+    return page
