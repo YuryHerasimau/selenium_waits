@@ -4,13 +4,8 @@ from selenium import webdriver
 import allure
 import time
 
-
-options = webdriver.ChromeOptions()
-# options.add_argument('--headless')
-browser.config.driver_options = options
-browser.config.timeout = 10
-# browser.config.window_width = 100
-# browser.config.window_height = 500
+from utils.speed_test import speed_test
+from utils.urls import base_url
 
 
 @allure.title("Test Authentication")
@@ -18,13 +13,14 @@ browser.config.timeout = 10
 @allure.tag("NewUI", "Essentials", "Authentication")
 @allure.severity(allure.severity_level.CRITICAL)
 @allure.label("owner", "John Doe")
-@allure.link("https://victoretc.github.io/selenium_waits/", name="Website")
+@allure.link(base_url, name="Website")
 @allure.issue("AUTH-123")
 @allure.testcase("TMS-456")
+@speed_test
 def test_login():
 
     with allure.step('Открыть главную страницу'):
-        browser.open("https://victoretc.github.io/selenium_waits/")
+        browser.open(base_url)
 
     browser.element('//*[@id="startTest"]').click()
     # browser.element(by.xpath('//*[@id="startTest"]')).with_(timeout=10).click()
