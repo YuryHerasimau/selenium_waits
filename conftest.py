@@ -13,11 +13,24 @@ from utils.urls import base_url
 
 @pytest.fixture
 def chrome_options():
-    # options = Options()
+    options = Options()
+    # options.add_argument("--headless")
+    options.add_argument("--start-maximized")
+    return options
+
+
+@pytest.fixture()
+def driver(chrome_options):
+    driver = webdriver.Chrome(options=chrome_options)
+    driver.implicitly_wait(10)
+    yield driver
+    driver.quit()
+
+
+@pytest.fixture() # autouse=True
+def browser_management(chrome_options):
     options = webdriver.ChromeOptions()
     browser.config.driver_options = options
-    # options.add_argument("--headless")
-    # options.add_argument("--start-maximized")
     browser.config.window_width = 100
     browser.config.window_height = 500
     browser.config.timeout = 10
@@ -26,22 +39,15 @@ def chrome_options():
         context=allure_commons._allure.StepContext
     )
 
-    return options
-
-
-@pytest.fixture(autouse=True)
-def driver(chrome_options):
-    driver = webdriver.Chrome(options=chrome_options)
-    driver.implicitly_wait(10)
-    yield driver
+    yield
 
     allure.attach(
         browser.driver.get_screenshot_as_png(),
-        name='screenshot',
-        attachment_type=allure.attachment_type.PNG
+        name="screenshot",
+        attachment_type=allure.attachment_type.PNG,
     )
 
-    driver.quit()
+    browser.quit()
 
 
 @pytest.fixture

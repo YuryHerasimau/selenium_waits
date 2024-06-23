@@ -15,6 +15,13 @@ To assess the performance of various waiting mechanisms in Selenium, I utilized 
 
 By comparing the execution times of tests utilizing Explicit Waits, Implicit Waits, and `time.sleep()`, valuable insights were gained into the performance of each waiting mechanism. This analysis facilitated the identification of the most efficient approach for waiting in Selenium test automation.
 
+| waiting mechanism               | execution time (avg), sec |
+| ------------------------------- |:-------------------------:|
+| Implicit Waits, time_to_wait=10 | 9.02                      |
+| Explicit Waits, timeout=10      | 9.58                      |
+| time.sleep(), secs=5 (twice)    | 10.92                     |
+| Selene, timeout=10              | 10.56                     |
+
 ### Test Case Details
 
 - **Title:** Registration Functionality Check on the Website

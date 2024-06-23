@@ -101,7 +101,7 @@ def test_register_with_time_sleep(driver, fake_login, fake_password):
     loader = driver.find_element(By.XPATH, '//*[@id="loader"]')
     assert loader.is_displayed()
 
-    time.sleep(3)
+    time.sleep(5)
     success_message = driver.find_element(By.XPATH, '//*[@id="successMessage"]')
     expected_success_message = "Вы успешно зарегистрированы!"
     assert (
