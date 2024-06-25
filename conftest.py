@@ -14,11 +14,6 @@ from utils.urls import base_url
 
 @pytest.fixture
 def chrome_options():
-    try:
-        service = Service('/usr/local/share/chromedriver-linux64')
-        service.start()
-    except Exception as ex:
-        print(ex)
     options = Options()
     options.add_argument("--headless")
     options.add_argument("--start-maximized")
@@ -33,6 +28,11 @@ def chrome_options():
 
 @pytest.fixture()
 def driver(chrome_options):
+    try:
+        service = Service('/usr/local/share/chromedriver-linux64')
+        service.start()
+    except Exception as ex:
+        print(ex)
     driver = webdriver.Chrome(options=chrome_options)
     driver.implicitly_wait(10)
     yield driver
