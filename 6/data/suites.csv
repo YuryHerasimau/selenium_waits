@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Jun 25 15:14:42 GMT 2024","Tue Jun 25 15:14:52 GMT 2024","10307","tests","test_selenium_waits","","","","test_register_with_time_sleep","Using time.sleep()"
+"passed","Tue Jun 25 15:14:15 GMT 2024","Tue Jun 25 15:14:23 GMT 2024","8585","tests","test_auth","","","","test_auth_positive",""
+"passed","Tue Jun 25 15:14:24 GMT 2024","Tue Jun 25 15:14:33 GMT 2024","8501","tests","test_selenium_waits","","","","test_register_with_explicit_waits","Using Explicit waits and Expected Conditions"
+"passed","Tue Jun 25 15:14:33 GMT 2024","Tue Jun 25 15:14:41 GMT 2024","8361","tests","test_selenium_waits","","","","test_register_with_implicit_waits","Using Implicit waits"
+"broken","Tue Jun 25 15:14:24 GMT 2024","Tue Jun 25 15:14:24 GMT 2024","182","tests","test_auth_with_selene","","","","Test Authentication","This test attempts to log into the website using a login and a password. Fails if any error happens.
+
+Note that this test does not test 2-Factor Authentication."
