@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
 from selene import browser, support
 import allure_commons
@@ -13,6 +14,11 @@ from utils.urls import base_url
 
 @pytest.fixture
 def chrome_options():
+    try:
+        service = Service('/usr/local/share/chromedriver-linux64')
+        service.start()
+    except Exception as ex:
+        print(ex)
     options = Options()
     options.add_argument("--headless")
     options.add_argument("--start-maximized")
