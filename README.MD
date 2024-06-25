@@ -69,11 +69,7 @@ source env/Scripts/activate
 ```
 5. Finally, run the tests using pytest with the following command:
 ```
-pytest -s -v
-```
-or
-```
-pytest -s -v --alluredir=allure-results
+pytest
 ```
 After running the tests, serve the Allure report using the following command:
 ```
