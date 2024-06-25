@@ -31,6 +31,7 @@ def driver(chrome_options):
     try:
         service = Service('/usr/local/share/chromedriver-linux64')
         service.start()
+        driver = webdriver.Chrome(options=chrome_options, service=service)
     except Exception as ex:
         print(ex)
     driver = webdriver.Chrome(options=chrome_options)
