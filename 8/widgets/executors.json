@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://YuryHerasimau.github.io/selenium_waits",
+  "buildOrder" : 8,
+  "buildName" : "GitHub Actions Run #9665460636",
+  "buildUrl" : "https://github.com/YuryHerasimau/selenium_waits/actions/runs/9665460636",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/8/"
+} ]
