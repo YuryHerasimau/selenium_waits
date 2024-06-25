@@ -1,0 +1,70 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "test_auth_positive",
+    "uid" : "f8d08e34d2557f0",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1719329338454,
+      "stop" : 1719329347810,
+      "duration" : 9356
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Test Authentication",
+    "uid" : "ab1d769c45b8466f",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1719329347906,
+      "stop" : 1719329348203,
+      "duration" : 297
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_register_with_explicit_waits",
+    "uid" : "a5b18cf6691b5752",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1719329348722,
+      "stop" : 1719329357243,
+      "duration" : 8521
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_register_with_implicit_waits",
+    "uid" : "69c72d1862d51d3f",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1719329357509,
+      "stop" : 1719329365863,
+      "duration" : 8354
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_register_with_time_sleep",
+    "uid" : "82ed666e34eaf889",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1719329366131,
+      "stop" : 1719329376451,
+      "duration" : 10320
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ],
+  "name" : "behaviors"
+}
