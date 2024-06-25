@@ -1,0 +1,51 @@
+[ {
+  "uid" : "7399974e95d4279e",
+  "name" : "test_register_with_implicit_waits",
+  "time" : {
+    "start" : 1719324158677,
+    "stop" : 1719324158677,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "8bd7812f8d396815",
+  "name" : "test_register_with_explicit_waits",
+  "time" : {
+    "start" : 1719324158466,
+    "stop" : 1719324158466,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "86246204639cca24",
+  "name" : "Test Authentication",
+  "time" : {
+    "start" : 1719324158003,
+    "stop" : 1719324158186,
+    "duration" : 183
+  },
+  "status" : "broken",
+  "severity" : "critical"
+}, {
+  "uid" : "9777d0db6e5d505d",
+  "name" : "test_register_with_time_sleep",
+  "time" : {
+    "start" : 1719324158887,
+    "stop" : 1719324158887,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "efe7721240b96a2b",
+  "name" : "test_auth_positive",
+  "time" : {
+    "start" : 1719324155749,
+    "stop" : 1719324155749,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]
