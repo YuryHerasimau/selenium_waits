@@ -1,0 +1,292 @@
+{
+  "uid" : "b68d664a86d51ce0",
+  "name" : "Test Authentication",
+  "fullName" : "tests.test_auth_with_selene#test_login",
+  "historyId" : "1a4d25bb59994fd792df79773c4c040e",
+  "time" : {
+    "start" : 1719328898462,
+    "stop" : 1719328908820,
+    "duration" : 10358
+  },
+  "description" : "This test attempts to log into the website using a login and a password. Fails if any error happens.\n\nNote that this test does not test 2-Factor Authentication.",
+  "descriptionHtml" : "<p>This test attempts to log into the website using a login and a password. Fails if any error happens.</p>\n<p>Note that this test does not test 2-Factor Authentication.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "fake_password",
+    "time" : {
+      "start" : 1719328898409,
+      "stop" : 1719328898461,
+      "duration" : 52
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "fake_login",
+    "time" : {
+      "start" : 1719328898311,
+      "stop" : 1719328898409,
+      "duration" : 98
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "browser_management",
+    "time" : {
+      "start" : 1719328898311,
+      "stop" : 1719328898311,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1719328877724,
+      "stop" : 1719328877832,
+      "duration" : 108
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "chrome_options",
+    "time" : {
+      "start" : 1719328898310,
+      "stop" : 1719328898310,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "This test attempts to log into the website using a login and a password. Fails if any error happens.\n\nNote that this test does not test 2-Factor Authentication.",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Открыть главную страницу",
+      "time" : {
+        "start" : 1719328898462,
+        "stop" : 1719328900438,
+        "duration" : 1976
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "element('xpath', '//*[@id=\"startTest\"]'): click",
+      "time" : {
+        "start" : 1719328900438,
+        "stop" : 1719328905466,
+        "duration" : 5028
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "element('#login'): type: Natalie Ware",
+      "time" : {
+        "start" : 1719328905466,
+        "stop" : 1719328905544,
+        "duration" : 78
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "element('#password'): type: Congress head where space sing bit impact. Building fight institution. Wait see evidence.",
+      "time" : {
+        "start" : 1719328905545,
+        "stop" : 1719328905705,
+        "duration" : 160
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "element('#agree'): click",
+      "time" : {
+        "start" : 1719328905705,
+        "stop" : 1719328905772,
+        "duration" : 67
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "element('xpath', './/*[text()[normalize-space(.) = concat(\"\", \"Зарегистрироваться\")]]'): click",
+      "time" : {
+        "start" : 1719328905772,
+        "stop" : 1719328905814,
+        "duration" : 42
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "element('#successMessage'): should have text Вы успешно зарегистрированы!",
+      "time" : {
+        "start" : 1719328905814,
+        "stop" : 1719328908818,
+        "duration" : 3004
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 7,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser_management::0",
+    "time" : {
+      "start" : 1719328908825,
+      "stop" : 1719328911187,
+      "duration" : 2362
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e743677c9846048c",
+      "name" : "screenshot",
+      "source" : "e743677c9846048c.png",
+      "type" : "image/png",
+      "size" : 11330
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "owner",
+    "value" : "John Doe"
+  }, {
+    "name" : "tag",
+    "value" : "NewUI"
+  }, {
+    "name" : "tag",
+    "value" : "Essentials"
+  }, {
+    "name" : "tag",
+    "value" : "Authentication"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_auth_with_selene"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-7NMG6HA"
+  }, {
+    "name" : "thread",
+    "value" : "11640-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_auth_with_selene"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "TMS-456",
+    "url" : "TMS-456",
+    "type" : "tms"
+  }, {
+    "name" : "AUTH-123",
+    "url" : "AUTH-123",
+    "type" : "issue"
+  }, {
+    "name" : "Website",
+    "url" : "https://victoretc.github.io/selenium_waits/",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "Authentication", "Essentials", "NewUI" ]
+  },
+  "source" : "b68d664a86d51ce0.json",
+  "parameterValues" : [ ]
+}

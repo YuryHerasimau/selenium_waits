@@ -1,0 +1,292 @@
+{
+  "uid" : "6f1c97e7e371a1aa",
+  "name" : "Test Authentication",
+  "fullName" : "tests.test_auth_with_selene#test_login",
+  "historyId" : "1a4d25bb59994fd792df79773c4c040e",
+  "time" : {
+    "start" : 1719325868376,
+    "stop" : 1719325879761,
+    "duration" : 11385
+  },
+  "description" : "This test attempts to log into the website using a login and a password. Fails if any error happens.\n\nNote that this test does not test 2-Factor Authentication.",
+  "descriptionHtml" : "<p>This test attempts to log into the website using a login and a password. Fails if any error happens.</p>\n<p>Note that this test does not test 2-Factor Authentication.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "fake_login",
+    "time" : {
+      "start" : 1719325868235,
+      "stop" : 1719325868321,
+      "duration" : 86
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1719325848437,
+      "stop" : 1719325848552,
+      "duration" : 115
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "fake_password",
+    "time" : {
+      "start" : 1719325868321,
+      "stop" : 1719325868376,
+      "duration" : 55
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "chrome_options",
+    "time" : {
+      "start" : 1719325868235,
+      "stop" : 1719325868235,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "browser_management",
+    "time" : {
+      "start" : 1719325868235,
+      "stop" : 1719325868235,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "This test attempts to log into the website using a login and a password. Fails if any error happens.\n\nNote that this test does not test 2-Factor Authentication.",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Открыть главную страницу",
+      "time" : {
+        "start" : 1719325868376,
+        "stop" : 1719325871332,
+        "duration" : 2956
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "element('xpath', '//*[@id=\"startTest\"]'): click",
+      "time" : {
+        "start" : 1719325871332,
+        "stop" : 1719325876354,
+        "duration" : 5022
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "element('#login'): type: Scott Lee",
+      "time" : {
+        "start" : 1719325876354,
+        "stop" : 1719325876424,
+        "duration" : 70
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "element('#password'): type: Mean figure number expect need. Its card though beyond.\nMonth politics after rest address. Owner three deal too score collection. Coach actually manager cut economy add build.",
+      "time" : {
+        "start" : 1719325876424,
+        "stop" : 1719325876661,
+        "duration" : 237
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "element('#agree'): click",
+      "time" : {
+        "start" : 1719325876661,
+        "stop" : 1719325876705,
+        "duration" : 44
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "element('xpath', './/*[text()[normalize-space(.) = concat(\"\", \"Зарегистрироваться\")]]'): click",
+      "time" : {
+        "start" : 1719325876708,
+        "stop" : 1719325876748,
+        "duration" : 40
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "element('#successMessage'): should have text Вы успешно зарегистрированы!",
+      "time" : {
+        "start" : 1719325876748,
+        "stop" : 1719325879760,
+        "duration" : 3012
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 7,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser_management::0",
+    "time" : {
+      "start" : 1719325879772,
+      "stop" : 1719325882038,
+      "duration" : 2266
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "60a911705bc2049",
+      "name" : "screenshot",
+      "source" : "60a911705bc2049.png",
+      "type" : "image/png",
+      "size" : 11330
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "Authentication"
+  }, {
+    "name" : "tag",
+    "value" : "NewUI"
+  }, {
+    "name" : "tag",
+    "value" : "Essentials"
+  }, {
+    "name" : "owner",
+    "value" : "John Doe"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_auth_with_selene"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-7NMG6HA"
+  }, {
+    "name" : "thread",
+    "value" : "13820-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_auth_with_selene"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "TMS-456",
+    "url" : "TMS-456",
+    "type" : "tms"
+  }, {
+    "name" : "AUTH-123",
+    "url" : "AUTH-123",
+    "type" : "issue"
+  }, {
+    "name" : "Website",
+    "url" : "https://victoretc.github.io/selenium_waits/",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "Authentication", "Essentials", "NewUI" ]
+  },
+  "source" : "6f1c97e7e371a1aa.json",
+  "parameterValues" : [ ]
+}
