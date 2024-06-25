@@ -22,16 +22,15 @@ def chrome_options():
     options.add_argument("--disable-gpu")
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--no-sandbox")
-    options.add_argument('--remote-debugging-pipe')
+    options.add_argument("--remote-debugging-pipe")
     return options
 
 
 @pytest.fixture()
 def driver(chrome_options):
     try:
-        service = Service('/usr/local/share/chromedriver-linux64')
+        service = Service("/usr/local/share/chromedriver-linux64")
         service.start()
-        driver = webdriver.Chrome(options=chrome_options, service=service)
     except Exception as ex:
         print(ex)
     driver = webdriver.Chrome(options=chrome_options)
@@ -40,8 +39,12 @@ def driver(chrome_options):
     driver.quit()
 
 
-@pytest.fixture() # autouse=True
+@pytest.fixture()  # autouse=True
 def browser_management(chrome_options):
+    try:
+        options = webdriver.Chrome("/usr/local/share/chromedriver-linux64")
+    except Exception as ex:
+        print(ex)
     options = webdriver.ChromeOptions()
     browser.config.driver_options = options
     browser.config.window_width = 100
