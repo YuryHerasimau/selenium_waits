@@ -42,7 +42,9 @@ def driver(chrome_options):
 @pytest.fixture()  # autouse=True
 def browser_management(chrome_options):
     try:
-        options = webdriver.Chrome("/usr/local/share/chromedriver-linux64")
+        service = Service("/usr/local/share/chromedriver-linux64")
+        service.start()
+        options = webdriver.Chrome(service=service)
     except Exception as ex:
         print(ex)
     options = webdriver.ChromeOptions()
