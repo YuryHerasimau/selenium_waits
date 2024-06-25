@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55a7d7a376aa <unknown>\n#1 0x55a7d771a0dc <unknown>\n#2 0x55a7d774f02a <unknown>\n#3 0x55a7d774b43b <unknown>\n#4 0x55a7d7795ef9 <unknown>\n#5 0x55a7d7789613 <unknown>\n#6 0x55a7d77594f7 <unknown>\n#7 0x55a7d7759e4e <unknown>\n#8 0x55a7d79fd87b <unknown>\n#9 0x55a7d7a01921 <unknown>\n#10 0x55a7d79e936e <unknown>\n#11 0x55a7d7a02482 <unknown>\n#12 0x55a7d79cdccf <unknown>\n#13 0x55a7d7a270a8 <unknown>\n#14 0x55a7d7a27280 <unknown>\n#15 0x55a7d7a367dc <unknown>\n#16 0x7f9422694ac3 <unknown>",
+      "children" : [ {
+        "name" : "Test Authentication",
+        "uid" : "4281eda5ea477459",
+        "parentUid" : "25e71e223e65137baf1d4dd986bcab3f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719330228778,
+          "stop" : 1719330229068,
+          "duration" : 290
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "25e71e223e65137baf1d4dd986bcab3f"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
