@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Jun 25 15:45:47 MSK 2024","Tue Jun 25 15:45:59 MSK 2024","12036","tests","test_auth_with_selene","","","","Test Authentication","This test attempts to log into the website using a login and a password. Fails if any error happens.
+
+Note that this test does not test 2-Factor Authentication."
+"passed","Tue Jun 25 15:46:21 MSK 2024","Tue Jun 25 15:46:30 MSK 2024","8684","tests","test_selenium_waits","","","","test_register_with_implicit_waits","Using Implicit waits"
+"passed","Tue Jun 25 15:46:38 MSK 2024","Tue Jun 25 15:46:49 MSK 2024","11164","tests","test_selenium_waits","","","","test_register_with_time_sleep","Using time.sleep()"
+"passed","Tue Jun 25 15:45:31 MSK 2024","Tue Jun 25 15:45:40 MSK 2024","9618","tests","test_auth","","","","test_auth_positive",""
+"passed","Tue Jun 25 15:46:04 MSK 2024","Tue Jun 25 15:46:13 MSK 2024","9386","tests","test_selenium_waits","","","","test_register_with_explicit_waits","Using Explicit waits and Expected Conditions"
