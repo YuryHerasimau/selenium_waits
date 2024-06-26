@@ -6,10 +6,13 @@ from selene import browser, support
 import allure_commons
 import allure
 import pytest
+import os
 from faker import Faker
-
 from pages.auth_page import LoginPage
 from utils.urls import base_url
+
+
+chrome_driver_path = "/usr/local/share/chromedriver-linux64"
 
 
 @pytest.fixture
@@ -28,11 +31,9 @@ def chrome_options():
 
 @pytest.fixture()
 def driver(chrome_options):
-    try:
-        service = Service("/usr/local/share/chromedriver-linux64")
+    if os.getenv("CI"):  # Check if running on GitHub Actions
+        service = Service(executable_path=chrome_driver_path)
         service.start()
-    except Exception as ex:
-        print(ex)
     driver = webdriver.Chrome(options=chrome_options)
     driver.implicitly_wait(10)
     yield driver
@@ -41,12 +42,9 @@ def driver(chrome_options):
 
 @pytest.fixture()  # autouse=True
 def browser_management(chrome_options):
-    try:
-        service = Service("/usr/local/share/chromedriver-linux64")
+    if os.getenv("CI"):  # Check if running on GitHub Actions
+        service = Service(executable_path=chrome_driver_path)
         service.start()
-        options = webdriver.Chrome(service=service)
-    except Exception as ex:
-        print(ex)
     options = webdriver.ChromeOptions()
     browser.config.driver_options = options
     browser.config.window_width = 100
