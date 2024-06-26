@@ -12,6 +12,8 @@ from pages.auth_page import LoginPage
 from utils.urls import base_url
 
 
+chrome_driver_path = "/usr/local/share/chromedriver-linux64"
+
 @pytest.fixture
 def chrome_options():
     options = Options()
@@ -29,9 +31,6 @@ def chrome_options():
 @pytest.fixture()
 def driver(chrome_options):
     if os.getenv("CI"): # Check if running on GitHub Actions
-        print('driver: CI env value is ', os.getenv("CI"))
-        chrome_driver_path = os.getenv("CHROMEDRIVER_PATH")
-        print('driver: chrome_driver_path is ', chrome_driver_path)
         service = Service(chrome_driver_path)
         service.start()
     driver = webdriver.Chrome(options=chrome_options)
@@ -43,9 +42,6 @@ def driver(chrome_options):
 @pytest.fixture()  # autouse=True
 def browser_management(chrome_options):
     if os.getenv("CI"): # Check if running on GitHub Actions
-        print('browser_management: CI env value is ', os.getenv("CI"))
-        chrome_driver_path = os.getenv("CHROMEDRIVER_PATH")
-        print('browser_management: chrome_driver_path is ', chrome_driver_path)
         service = Service(chrome_driver_path)
         service.start()
         # options = webdriver.Chrome(service=service)
