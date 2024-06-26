@@ -29,8 +29,11 @@ def chrome_options():
 @pytest.fixture()
 def driver(chrome_options):
     if os.getenv("CI"): # Check if running on GitHub Actions
-        service = Service("/usr/local/share/chromedriver-linux64")
-        service.start()
+        try:
+            service = Service("/usr/local/share/chromedriver-linux64")
+            service.start()
+        except Exception as ex:
+            print(ex)
     driver = webdriver.Chrome(options=chrome_options)
     driver.implicitly_wait(10)
     yield driver
@@ -40,9 +43,12 @@ def driver(chrome_options):
 @pytest.fixture()  # autouse=True
 def browser_management(chrome_options):
     if os.getenv("CI"): # Check if running on GitHub Actions
-        service = Service("/usr/local/share/chromedriver-linux64")
-        service.start()
-        # options = webdriver.Chrome(service=service)
+        try:
+            service = Service("/usr/local/share/chromedriver-linux64")
+            service.start()
+            options = webdriver.Chrome(service=service)
+        except Exception as ex:
+            print(ex)
     options = webdriver.ChromeOptions()
     browser.config.driver_options = options
     browser.config.window_width = 100
