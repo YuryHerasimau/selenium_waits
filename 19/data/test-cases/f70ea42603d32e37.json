@@ -1,0 +1,807 @@
+{
+  "uid" : "f70ea42603d32e37",
+  "name" : "Test Authentication",
+  "fullName" : "tests.test_auth_with_selene#test_login",
+  "historyId" : "1a4d25bb59994fd792df79773c4c040e",
+  "time" : {
+    "start" : 1719413671061,
+    "stop" : 1719413681630,
+    "duration" : 10569
+  },
+  "description" : "This test attempts to log into the website using a login and a password. Fails if any error happens.\n\nNote that this test does not test 2-Factor Authentication.",
+  "descriptionHtml" : "<p>This test attempts to log into the website using a login and a password. Fails if any error happens.</p>\n<p>Note that this test does not test 2-Factor Authentication.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "fake_password",
+    "time" : {
+      "start" : 1719413671003,
+      "stop" : 1719413671061,
+      "duration" : 58
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "fake_login",
+    "time" : {
+      "start" : 1719413670945,
+      "stop" : 1719413671003,
+      "duration" : 58
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "browser_management",
+    "time" : {
+      "start" : 1719413670945,
+      "stop" : 1719413670945,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "chrome_options",
+    "time" : {
+      "start" : 1719413670945,
+      "stop" : 1719413670945,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1719413650723,
+      "stop" : 1719413650818,
+      "duration" : 95
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "This test attempts to log into the website using a login and a password. Fails if any error happens.\n\nNote that this test does not test 2-Factor Authentication.",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Открыть главную страницу",
+      "time" : {
+        "start" : 1719413671062,
+        "stop" : 1719413673246,
+        "duration" : 2184
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "element('xpath', '//*[@id=\"startTest\"]'): click",
+      "time" : {
+        "start" : 1719413673247,
+        "stop" : 1719413678258,
+        "duration" : 5011
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "element('#login'): type: Brian Lewis",
+      "time" : {
+        "start" : 1719413678258,
+        "stop" : 1719413678340,
+        "duration" : 82
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "element('#password'): type: We agree few religious against. Structure thought edge movement hour trial purpose. Power rate strong drop wish minute.",
+      "time" : {
+        "start" : 1719413678340,
+        "stop" : 1719413678536,
+        "duration" : 196
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "element('#agree'): click",
+      "time" : {
+        "start" : 1719413678536,
+        "stop" : 1719413678581,
+        "duration" : 45
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "element('xpath', './/*[text()[normalize-space(.) = concat(\"\", \"Зарегистрироваться\")]]'): click",
+      "time" : {
+        "start" : 1719413678581,
+        "stop" : 1719413678623,
+        "duration" : 42
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "element('#successMessage'): should have text Вы успешно зарегистрированы!",
+      "time" : {
+        "start" : 1719413678623,
+        "stop" : 1719413681630,
+        "duration" : 3007
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 7,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser_management::0",
+    "time" : {
+      "start" : 1719413681632,
+      "stop" : 1719413684083,
+      "duration" : 2451
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "59226eb1b955d967",
+      "name" : "screenshot",
+      "source" : "59226eb1b955d967.png",
+      "type" : "image/png",
+      "size" : 11330
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "Essentials"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "tag",
+    "value" : "Authentication"
+  }, {
+    "name" : "owner",
+    "value" : "John Doe"
+  }, {
+    "name" : "tag",
+    "value" : "NewUI"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_auth_with_selene"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-7NMG6HA"
+  }, {
+    "name" : "thread",
+    "value" : "13740-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_auth_with_selene"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "TMS-456",
+    "url" : "TMS-456",
+    "type" : "tms"
+  }, {
+    "name" : "AUTH-123",
+    "url" : "AUTH-123",
+    "type" : "issue"
+  }, {
+    "name" : "Website",
+    "url" : "https://victoretc.github.io/selenium_waits/",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "owner" : "John Doe",
+    "retries" : [ {
+      "uid" : "c7e5d98164526b68",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719413099998,
+        "stop" : 1719413110375,
+        "duration" : 10377
+      }
+    }, {
+      "uid" : "9e4caf6bfe21660f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719412283489,
+        "stop" : 1719412294001,
+        "duration" : 10512
+      }
+    }, {
+      "uid" : "38def9850285b4a0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719409829921,
+        "stop" : 1719409840556,
+        "duration" : 10635
+      }
+    }, {
+      "uid" : "eedd7d3c0dbd52dd",
+      "status" : "broken",
+      "statusDetails" : "TypeError: expected str, bytes or os.PathLike object, not NoneType",
+      "time" : {
+        "start" : 1719407323134,
+        "stop" : 1719407323134,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "79afb115ec81ffaf",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'chrome_driver_path' is not defined",
+      "time" : {
+        "start" : 1719407138713,
+        "stop" : 1719407138713,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "13f7d9f3f5a4fe81",
+      "status" : "broken",
+      "statusDetails" : "TypeError: expected str, bytes or os.PathLike object, not NoneType",
+      "time" : {
+        "start" : 1719406600726,
+        "stop" : 1719406600726,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "487d9dfa199cfeb3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719405175713,
+        "stop" : 1719405186138,
+        "duration" : 10425
+      }
+    }, {
+      "uid" : "5945b4b4f020db53",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719404993170,
+        "stop" : 1719405003855,
+        "duration" : 10685
+      }
+    }, {
+      "uid" : "f76125e02a895933",
+      "status" : "broken",
+      "statusDetails" : "TypeError: expected str, bytes or os.PathLike object, not NoneType",
+      "time" : {
+        "start" : 1719404881130,
+        "stop" : 1719404881130,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "726576f1c37d27bb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719403623561,
+        "stop" : 1719403634070,
+        "duration" : 10509
+      }
+    }, {
+      "uid" : "8c07cb48c711ccb0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719331476349,
+        "stop" : 1719331486826,
+        "duration" : 10477
+      }
+    }, {
+      "uid" : "ac208b6c2e1e2d8f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719331089942,
+        "stop" : 1719331100226,
+        "duration" : 10284
+      }
+    }, {
+      "uid" : "afedb7d55269afc6",
+      "status" : "broken",
+      "statusDetails" : "urllib3.exceptions.LocationValueError: No host specified.",
+      "time" : {
+        "start" : 1719330829495,
+        "stop" : 1719330829500,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "7dd7a90ab0740d59",
+      "status" : "broken",
+      "statusDetails" : "urllib3.exceptions.LocationValueError: No host specified.",
+      "time" : {
+        "start" : 1719330737902,
+        "stop" : 1719330737940,
+        "duration" : 38
+      }
+    }, {
+      "uid" : "ae4003fe3b8b46b5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719330068996,
+        "stop" : 1719330079469,
+        "duration" : 10473
+      }
+    }, {
+      "uid" : "d48dfc083ad2e049",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719330003049,
+        "stop" : 1719330013985,
+        "duration" : 10936
+      }
+    }, {
+      "uid" : "4692c0bcb4fc64d7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719329592413,
+        "stop" : 1719329602749,
+        "duration" : 10336
+      }
+    }, {
+      "uid" : "4710a946040ca16c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719329211392,
+        "stop" : 1719329221937,
+        "duration" : 10545
+      }
+    }, {
+      "uid" : "9c5ce854c8d92284",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [WinError 2] The system cannot find the file specified",
+      "time" : {
+        "start" : 1719329066137,
+        "stop" : 1719329066137,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "7d32df38e876bb82",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719328898462,
+        "stop" : 1719328908820,
+        "duration" : 10358
+      }
+    }, {
+      "uid" : "57f55753ec7513b7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719325868376,
+        "stop" : 1719325879761,
+        "duration" : 11385
+      }
+    }, {
+      "uid" : "7cdfc24687866a4b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719320775054,
+        "stop" : 1719320785535,
+        "duration" : 10481
+      }
+    }, {
+      "uid" : "8fa3d77588f5b51c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719320544976,
+        "stop" : 1719320556078,
+        "duration" : 11102
+      }
+    }, {
+      "uid" : "9ab00b5580814e48",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719319547096,
+        "stop" : 1719319559132,
+        "duration" : 12036
+      }
+    }, {
+      "uid" : "eeb1c6b195fac802",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719151051520,
+        "stop" : 1719151061897,
+        "duration" : 10377
+      }
+    }, {
+      "uid" : "6f176c37b3b79043",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719150830693,
+        "stop" : 1719150842017,
+        "duration" : 11324
+      }
+    }, {
+      "uid" : "99485ce0f6e892e4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719150684754,
+        "stop" : 1719150695156,
+        "duration" : 10402
+      }
+    }, {
+      "uid" : "91c81516d8b8a24f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719150077622,
+        "stop" : 1719150087950,
+        "duration" : 10328
+      }
+    }, {
+      "uid" : "f25f343f097595a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719128751637,
+        "stop" : 1719128762000,
+        "duration" : 10363
+      }
+    }, {
+      "uid" : "ee2c4a77ab325007",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719127874385,
+        "stop" : 1719127884755,
+        "duration" : 10370
+      }
+    }, {
+      "uid" : "65ce84bb2f902721",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719127339149,
+        "stop" : 1719127347891,
+        "duration" : 8742
+      }
+    }, {
+      "uid" : "7d21e4aabfe8e9eb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719045648632,
+        "stop" : 1719045657379,
+        "duration" : 8747
+      }
+    }, {
+      "uid" : "d2d36e8f91e55e48",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719044895289,
+        "stop" : 1719044903952,
+        "duration" : 8663
+      }
+    }, {
+      "uid" : "b6f66b2ccd9e6d57",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719044441407,
+        "stop" : 1719044450074,
+        "duration" : 8667
+      }
+    }, {
+      "uid" : "b5229d779ef0a1db",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'Browser' object has no attribute 'implicitly_wait'",
+      "time" : {
+        "start" : 1719043867535,
+        "stop" : 1719043867535,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "d8f80d9bb4c0b59a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719012739838,
+        "stop" : 1719012748574,
+        "duration" : 8736
+      }
+    }, {
+      "uid" : "15e85664a226d3fa",
+      "status" : "failed",
+      "statusDetails" : "selene.core.exceptions.TimeoutException: Message: \n\nTimed out after 10s, while waiting for:\nbrowser.element(('css selector', '#login')).type: John\n\nReason: ElementNotInteractableException: element not interactable\n  (Session info: chrome=121.0.6167.140)\nScreenshot: file://C:\\Users\\Юрий\\.selene\\screenshots\\1719012484799\\1719012484799.png\nPageSource: file://C:\\Users\\Юрий\\.selene\\screenshots\\1719012484799\\1719012484799.html",
+      "time" : {
+        "start" : 1719012508781,
+        "stop" : 1719012519251,
+        "duration" : 10470
+      }
+    }, {
+      "uid" : "c5eb93464e4047bf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1718734864206,
+        "stop" : 1718734872972,
+        "duration" : 8766
+      }
+    }, {
+      "uid" : "b498c7e277d3a30e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1718734515271,
+        "stop" : 1718734523953,
+        "duration" : 8682
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 18,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 19
+      },
+      "items" : [ {
+        "uid" : "8110a68a60637f3b",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/18//#testresult/8110a68a60637f3b",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: 'chromedriver-linux64' executable may have wrong permissions.",
+        "time" : {
+          "start" : 1719413938013,
+          "stop" : 1719413938013,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "9e8cd41c982d474b",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/17//#testresult/9e8cd41c982d474b",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: 'chromedriver-linux64' executable may have wrong permissions.",
+        "time" : {
+          "start" : 1719413253179,
+          "stop" : 1719413253179,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "1223c64fdd21a81",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/16//#testresult/1223c64fdd21a81",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: 'chromedriver-linux64' executable may have wrong permissions.",
+        "time" : {
+          "start" : 1719412458626,
+          "stop" : 1719412458626,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "a5d44279daf5d759",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/15//#testresult/a5d44279daf5d759",
+        "status" : "broken",
+        "statusDetails" : "TypeError: expected str, bytes or os.PathLike object, not NoneType",
+        "time" : {
+          "start" : 1719412183882,
+          "stop" : 1719412183882,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "5a0c7fad52f0edc6",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/14//#testresult/5a0c7fad52f0edc6",
+        "status" : "broken",
+        "statusDetails" : "TypeError: expected str, bytes or os.PathLike object, not NoneType",
+        "time" : {
+          "start" : 1719412051527,
+          "stop" : 1719412051527,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "ab31d41ec284a87",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/13//#testresult/ab31d41ec284a87",
+        "status" : "broken",
+        "statusDetails" : "TypeError: expected str, bytes or os.PathLike object, not NoneType",
+        "time" : {
+          "start" : 1719410376577,
+          "stop" : 1719410376577,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "15b6c31a75ae26d",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/12//#testresult/15b6c31a75ae26d",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: 'chromedriver-linux64' executable may have wrong permissions.",
+        "time" : {
+          "start" : 1719405781857,
+          "stop" : 1719405781857,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "426cd93975a322a1",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/11//#testresult/426cd93975a322a1",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x5574f39636aa <unknown>\n#1 0x5574f36460dc <unknown>\n#2 0x5574f367b02a <unknown>\n#3 0x5574f367743b <unknown>\n#4 0x5574f36c1ef9 <unknown>\n#5 0x5574f36b5613 <unknown>\n#6 0x5574f36854f7 <unknown>\n#7 0x5574f3685e4e <unknown>\n#8 0x5574f392987b <unknown>\n#9 0x5574f392d921 <unknown>\n#10 0x5574f391536e <unknown>\n#11 0x5574f392e482 <unknown>\n#12 0x5574f38f9ccf <unknown>\n#13 0x5574f39530a8 <unknown>\n#14 0x5574f3953280 <unknown>\n#15 0x5574f39627dc <unknown>\n#16 0x7f9590494ac3 <unknown>",
+        "time" : {
+          "start" : 1719331621603,
+          "stop" : 1719331622216,
+          "duration" : 613
+        }
+      }, {
+        "uid" : "3cc87b4dfb2c21b5",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/10//#testresult/3cc87b4dfb2c21b5",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x558af43026aa <unknown>\n#1 0x558af3fe50dc <unknown>\n#2 0x558af401a02a <unknown>\n#3 0x558af401643b <unknown>\n#4 0x558af4060ef9 <unknown>\n#5 0x558af4054613 <unknown>\n#6 0x558af40244f7 <unknown>\n#7 0x558af4024e4e <unknown>\n#8 0x558af42c887b <unknown>\n#9 0x558af42cc921 <unknown>\n#10 0x558af42b436e <unknown>\n#11 0x558af42cd482 <unknown>\n#12 0x558af4298ccf <unknown>\n#13 0x558af42f20a8 <unknown>\n#14 0x558af42f2280 <unknown>\n#15 0x558af43017dc <unknown>\n#16 0x7f5dbca94ac3 <unknown>",
+        "time" : {
+          "start" : 1719331274759,
+          "stop" : 1719331274948,
+          "duration" : 189
+        }
+      }, {
+        "uid" : "4281eda5ea477459",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/9//#testresult/4281eda5ea477459",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55a7d7a376aa <unknown>\n#1 0x55a7d771a0dc <unknown>\n#2 0x55a7d774f02a <unknown>\n#3 0x55a7d774b43b <unknown>\n#4 0x55a7d7795ef9 <unknown>\n#5 0x55a7d7789613 <unknown>\n#6 0x55a7d77594f7 <unknown>\n#7 0x55a7d7759e4e <unknown>\n#8 0x55a7d79fd87b <unknown>\n#9 0x55a7d7a01921 <unknown>\n#10 0x55a7d79e936e <unknown>\n#11 0x55a7d7a02482 <unknown>\n#12 0x55a7d79cdccf <unknown>\n#13 0x55a7d7a270a8 <unknown>\n#14 0x55a7d7a27280 <unknown>\n#15 0x55a7d7a367dc <unknown>\n#16 0x7f9422694ac3 <unknown>",
+        "time" : {
+          "start" : 1719330228778,
+          "stop" : 1719330229068,
+          "duration" : 290
+        }
+      }, {
+        "uid" : "970c7e029a09ea84",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/8//#testresult/970c7e029a09ea84",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x563a501a56aa <unknown>\n#1 0x563a4fe880dc <unknown>\n#2 0x563a4febd02a <unknown>\n#3 0x563a4feb943b <unknown>\n#4 0x563a4ff03ef9 <unknown>\n#5 0x563a4fef7613 <unknown>\n#6 0x563a4fec74f7 <unknown>\n#7 0x563a4fec7e4e <unknown>\n#8 0x563a5016b87b <unknown>\n#9 0x563a5016f921 <unknown>\n#10 0x563a5015736e <unknown>\n#11 0x563a50170482 <unknown>\n#12 0x563a5013bccf <unknown>\n#13 0x563a501950a8 <unknown>\n#14 0x563a50195280 <unknown>\n#15 0x563a501a47dc <unknown>\n#16 0x7fc078894ac3 <unknown>",
+        "time" : {
+          "start" : 1719329829862,
+          "stop" : 1719329830051,
+          "duration" : 189
+        }
+      }, {
+        "uid" : "ab1d769c45b8466f",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/7//#testresult/ab1d769c45b8466f",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x559d7bf4b6aa <unknown>\n#1 0x559d7bc2e0dc <unknown>\n#2 0x559d7bc6302a <unknown>\n#3 0x559d7bc5f43b <unknown>\n#4 0x559d7bca9ef9 <unknown>\n#5 0x559d7bc9d613 <unknown>\n#6 0x559d7bc6d4f7 <unknown>\n#7 0x559d7bc6de4e <unknown>\n#8 0x559d7bf1187b <unknown>\n#9 0x559d7bf15921 <unknown>\n#10 0x559d7befd36e <unknown>\n#11 0x559d7bf16482 <unknown>\n#12 0x559d7bee1ccf <unknown>\n#13 0x559d7bf3b0a8 <unknown>\n#14 0x559d7bf3b280 <unknown>\n#15 0x559d7bf4a7dc <unknown>\n#16 0x7f4c4fe94ac3 <unknown>",
+        "time" : {
+          "start" : 1719329347906,
+          "stop" : 1719329348203,
+          "duration" : 297
+        }
+      }, {
+        "uid" : "f8b194d80557e05e",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/6//#testresult/f8b194d80557e05e",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x5582de5366aa <unknown>\n#1 0x5582de2190dc <unknown>\n#2 0x5582de24e02a <unknown>\n#3 0x5582de24a43b <unknown>\n#4 0x5582de294ef9 <unknown>\n#5 0x5582de288613 <unknown>\n#6 0x5582de2584f7 <unknown>\n#7 0x5582de258e4e <unknown>\n#8 0x5582de4fc87b <unknown>\n#9 0x5582de500921 <unknown>\n#10 0x5582de4e836e <unknown>\n#11 0x5582de501482 <unknown>\n#12 0x5582de4ccccf <unknown>\n#13 0x5582de5260a8 <unknown>\n#14 0x5582de526280 <unknown>\n#15 0x5582de5357dc <unknown>\n#16 0x7f7f75294ac3 <unknown>",
+        "time" : {
+          "start" : 1719328464047,
+          "stop" : 1719328464229,
+          "duration" : 182
+        }
+      }, {
+        "uid" : "f4a3b9a1f7939696",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/5//#testresult/f4a3b9a1f7939696",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x5558aadd66aa <unknown>\n#1 0x5558aaab90dc <unknown>\n#2 0x5558aaaee02a <unknown>\n#3 0x5558aaaea43b <unknown>\n#4 0x5558aab34ef9 <unknown>\n#5 0x5558aab28613 <unknown>\n#6 0x5558aaaf84f7 <unknown>\n#7 0x5558aaaf8e4e <unknown>\n#8 0x5558aad9c87b <unknown>\n#9 0x5558aada0921 <unknown>\n#10 0x5558aad8836e <unknown>\n#11 0x5558aada1482 <unknown>\n#12 0x5558aad6cccf <unknown>\n#13 0x5558aadc60a8 <unknown>\n#14 0x5558aadc6280 <unknown>\n#15 0x5558aadd57dc <unknown>\n#16 0x7f4e55694ac3 <unknown>",
+        "time" : {
+          "start" : 1719327466934,
+          "stop" : 1719327467333,
+          "duration" : 399
+        }
+      }, {
+        "uid" : "73a7d6b4ee13e34a",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/4//#testresult/73a7d6b4ee13e34a",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x5633e3c886aa <unknown>\n#1 0x5633e396b0dc <unknown>\n#2 0x5633e39a002a <unknown>\n#3 0x5633e399c43b <unknown>\n#4 0x5633e39e6ef9 <unknown>\n#5 0x5633e39da613 <unknown>\n#6 0x5633e39aa4f7 <unknown>\n#7 0x5633e39aae4e <unknown>\n#8 0x5633e3c4e87b <unknown>\n#9 0x5633e3c52921 <unknown>\n#10 0x5633e3c3a36e <unknown>\n#11 0x5633e3c53482 <unknown>\n#12 0x5633e3c1eccf <unknown>\n#13 0x5633e3c780a8 <unknown>\n#14 0x5633e3c78280 <unknown>\n#15 0x5633e3c877dc <unknown>\n#16 0x7ff989c94ac3 <unknown>",
+        "time" : {
+          "start" : 1719326203064,
+          "stop" : 1719326203247,
+          "duration" : 183
+        }
+      }, {
+        "uid" : "86246204639cca24",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/3//#testresult/86246204639cca24",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x556d77e9c6aa <unknown>\n#1 0x556d77b7f0dc <unknown>\n#2 0x556d77bb402a <unknown>\n#3 0x556d77bb043b <unknown>\n#4 0x556d77bfaef9 <unknown>\n#5 0x556d77bee613 <unknown>\n#6 0x556d77bbe4f7 <unknown>\n#7 0x556d77bbee4e <unknown>\n#8 0x556d77e6287b <unknown>\n#9 0x556d77e66921 <unknown>\n#10 0x556d77e4e36e <unknown>\n#11 0x556d77e67482 <unknown>\n#12 0x556d77e32ccf <unknown>\n#13 0x556d77e8c0a8 <unknown>\n#14 0x556d77e8c280 <unknown>\n#15 0x556d77e9b7dc <unknown>\n#16 0x7fcdd0e94ac3 <unknown>",
+        "time" : {
+          "start" : 1719324158003,
+          "stop" : 1719324158186,
+          "duration" : 183
+        }
+      }, {
+        "uid" : "7669959df3874bc8",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/2//#testresult/7669959df3874bc8",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x5568b9b176aa <unknown>\n#1 0x5568b97fa0dc <unknown>\n#2 0x5568b982f02a <unknown>\n#3 0x5568b982b43b <unknown>\n#4 0x5568b9875ef9 <unknown>\n#5 0x5568b9869613 <unknown>\n#6 0x5568b98394f7 <unknown>\n#7 0x5568b9839e4e <unknown>\n#8 0x5568b9add87b <unknown>\n#9 0x5568b9ae1921 <unknown>\n#10 0x5568b9ac936e <unknown>\n#11 0x5568b9ae2482 <unknown>\n#12 0x5568b9aadccf <unknown>\n#13 0x5568b9b070a8 <unknown>\n#14 0x5568b9b07280 <unknown>\n#15 0x5568b9b167dc <unknown>\n#16 0x7f1f32c94ac3 <unknown>",
+        "time" : {
+          "start" : 1719324130932,
+          "stop" : 1719324131115,
+          "duration" : 183
+        }
+      }, {
+        "uid" : "e616bfbacbc17e1a",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/1//#testresult/e616bfbacbc17e1a",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55c099bd26aa <unknown>\n#1 0x55c0998b50dc <unknown>\n#2 0x55c0998ea02a <unknown>\n#3 0x55c0998e643b <unknown>\n#4 0x55c099930ef9 <unknown>\n#5 0x55c099924613 <unknown>\n#6 0x55c0998f44f7 <unknown>\n#7 0x55c0998f4e4e <unknown>\n#8 0x55c099b9887b <unknown>\n#9 0x55c099b9c921 <unknown>\n#10 0x55c099b8436e <unknown>\n#11 0x55c099b9d482 <unknown>\n#12 0x55c099b68ccf <unknown>\n#13 0x55c099bc20a8 <unknown>\n#14 0x55c099bc2280 <unknown>\n#15 0x55c099bd17dc <unknown>\n#16 0x7f1eadc94ac3 <unknown>",
+        "time" : {
+          "start" : 1719323939382,
+          "stop" : 1719323939569,
+          "duration" : 187
+        }
+      } ]
+    },
+    "tags" : [ "Authentication", "Essentials", "NewUI" ]
+  },
+  "source" : "f70ea42603d32e37.json",
+  "parameterValues" : [ ]
+}
