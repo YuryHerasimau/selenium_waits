@@ -1,0 +1,78 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "TypeError: expected str, bytes or os.PathLike object, not NoneType",
+      "children" : [ {
+        "name" : "test_auth_positive",
+        "uid" : "c7fef8ac55cca06d",
+        "parentUid" : "8183d8e68b657cd58d9fb21a53e48460",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719410376418,
+          "stop" : 1719410376418,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "ab31d41ec284a87",
+        "parentUid" : "8183d8e68b657cd58d9fb21a53e48460",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719410376577,
+          "stop" : 1719410376577,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "1f91253f5b5eb9f3",
+        "parentUid" : "8183d8e68b657cd58d9fb21a53e48460",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719410376634,
+          "stop" : 1719410376634,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "d6917bc8a87be830",
+        "parentUid" : "8183d8e68b657cd58d9fb21a53e48460",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719410376677,
+          "stop" : 1719410376677,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "f5ef6c8a4516302f",
+        "parentUid" : "8183d8e68b657cd58d9fb21a53e48460",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719410376718,
+          "stop" : 1719410376718,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8183d8e68b657cd58d9fb21a53e48460"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
