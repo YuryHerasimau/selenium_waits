@@ -1,0 +1,573 @@
+{
+  "uid" : "a4e4e627fe9b1c3f",
+  "name" : "test_register_with_explicit_waits",
+  "fullName" : "tests.test_selenium_waits#test_register_with_explicit_waits",
+  "historyId" : "4f812f0a491918964ba0000ac9383a15",
+  "time" : {
+    "start" : 1719412458689,
+    "stop" : 1719412458689,
+    "duration" : 0
+  },
+  "description" : "Using Explicit waits and Expected Conditions",
+  "descriptionHtml" : "<p>Using Explicit waits and Expected Conditions</p>\n",
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.WebDriverException: Message: 'chromedriver-linux64' executable may have wrong permissions.",
+  "statusTrace" : "self = <selenium.webdriver.chrome.service.Service object at 0x7ff68f15ebd0>\npath = '/usr/local/share/chromedriver-linux64'\n\n    def _start_process(self, path: str) -> None:\n        \"\"\"Creates a subprocess by executing the command provided.\n    \n        :param cmd: full command to execute\n        \"\"\"\n        cmd = [path]\n        cmd.extend(self.command_line_args())\n        close_file_descriptors = self.popen_kw.pop(\"close_fds\", system() != \"Windows\")\n        try:\n            start_info = None\n            if system() == \"Windows\":\n                start_info = subprocess.STARTUPINFO()\n                start_info.dwFlags = subprocess.CREATE_NEW_CONSOLE | subprocess.STARTF_USESHOWWINDOW\n                start_info.wShowWindow = subprocess.SW_HIDE\n    \n>           self.process = subprocess.Popen(\n                cmd,\n                env=self.env,\n                close_fds=close_file_descriptors,\n                stdout=self.log_output,\n                stderr=self.log_output,\n                stdin=PIPE,\n                creationflags=self.creation_flags,\n                startupinfo=start_info,\n                **self.popen_kw,\n            )\n\n/opt/hostedtoolcache/Python/3.11.9/x64/lib/python3.11/site-packages/selenium/webdriver/common/service.py:208: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/opt/hostedtoolcache/Python/3.11.9/x64/lib/python3.11/subprocess.py:1026: in __init__\n    self._execute_child(args, executable, preexec_fn, close_fds,\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <Popen: returncode: 255 args: ['/usr/local/share/chromedriver-linux64', '--p...>\nargs = ['/usr/local/share/chromedriver-linux64', '--port=50811']\nexecutable = b'/usr/local/share/chromedriver-linux64', preexec_fn = None\nclose_fds = True, pass_fds = (), cwd = None\nenv = environ({'SELENIUM_JAR_PATH': '/usr/share/java/selenium-server.jar', 'CONDA': '/usr/share/miniconda', 'GITHUB_WORKSPAC...T_VERSION': '8.2.0', 'PYTEST_CURRENT_TEST': 'tests/test_selenium_waits.py::test_register_with_explicit_waits (setup)'})\nstartupinfo = None, creationflags = 0, shell = False, p2cread = 5, p2cwrite = 6\nc2pread = -1, c2pwrite = 7, errread = -1, errwrite = 7, restore_signals = True\ngid = None, gids = None, uid = None, umask = -1, start_new_session = False\nprocess_group = -1\n\n    def _execute_child(self, args, executable, preexec_fn, close_fds,\n                       pass_fds, cwd, env,\n                       startupinfo, creationflags, shell,\n                       p2cread, p2cwrite,\n                       c2pread, c2pwrite,\n                       errread, errwrite,\n                       restore_signals,\n                       gid, gids, uid, umask,\n                       start_new_session, process_group):\n        \"\"\"Execute program (POSIX version)\"\"\"\n    \n        if isinstance(args, (str, bytes)):\n            args = [args]\n        elif isinstance(args, os.PathLike):\n            if shell:\n                raise TypeError('path-like args is not allowed when '\n                                'shell is true')\n            args = [args]\n        else:\n            args = list(args)\n    \n        if shell:\n            # On Android the default shell is at '/system/bin/sh'.\n            unix_shell = ('/system/bin/sh' if\n                      hasattr(sys, 'getandroidapilevel') else '/bin/sh')\n            args = [unix_shell, \"-c\"] + args\n            if executable:\n                args[0] = executable\n    \n        if executable is None:\n            executable = args[0]\n    \n        sys.audit(\"subprocess.Popen\", executable, args, cwd, env)\n    \n        if (_USE_POSIX_SPAWN\n                and os.path.dirname(executable)\n                and preexec_fn is None\n                and not close_fds\n                and not pass_fds\n                and cwd is None\n                and (p2cread == -1 or p2cread > 2)\n                and (c2pwrite == -1 or c2pwrite > 2)\n                and (errwrite == -1 or errwrite > 2)\n                and not start_new_session\n                and process_group == -1\n                and gid is None\n                and gids is None\n                and uid is None\n                and umask < 0):\n            self._posix_spawn(args, executable, env, restore_signals,\n                              p2cread, p2cwrite,\n                              c2pread, c2pwrite,\n                              errread, errwrite)\n            return\n    \n        orig_executable = executable\n    \n        # For transferring possible exec failure from child to parent.\n        # Data format: \"exception name:hex errno:description\"\n        # Pickle is not used; it is complex and involves memory allocation.\n        errpipe_read, errpipe_write = os.pipe()\n        # errpipe_write must not be in the standard io 0, 1, or 2 fd range.\n        low_fds_to_close = []\n        while errpipe_write < 3:\n            low_fds_to_close.append(errpipe_write)\n            errpipe_write = os.dup(errpipe_write)\n        for low_fd in low_fds_to_close:\n            os.close(low_fd)\n        try:\n            try:\n                # We must avoid complex work that could involve\n                # malloc or free in the child process to avoid\n                # potential deadlocks, thus we do all this here.\n                # and pass it to fork_exec()\n    \n                if env is not None:\n                    env_list = []\n                    for k, v in env.items():\n                        k = os.fsencode(k)\n                        if b'=' in k:\n                            raise ValueError(\"illegal environment variable name\")\n                        env_list.append(k + b'=' + os.fsencode(v))\n                else:\n                    env_list = None  # Use execv instead of execve.\n                executable = os.fsencode(executable)\n                if os.path.dirname(executable):\n                    executable_list = (executable,)\n                else:\n                    # This matches the behavior of os._execvpe().\n                    executable_list = tuple(\n                        os.path.join(os.fsencode(dir), executable)\n                        for dir in os.get_exec_path(env))\n                fds_to_keep = set(pass_fds)\n                fds_to_keep.add(errpipe_write)\n                self.pid = _fork_exec(\n                        args, executable_list,\n                        close_fds, tuple(sorted(map(int, fds_to_keep))),\n                        cwd, env_list,\n                        p2cread, p2cwrite, c2pread, c2pwrite,\n                        errread, errwrite,\n                        errpipe_read, errpipe_write,\n                        restore_signals, start_new_session,\n                        process_group, gid, gids, uid, umask,\n                        preexec_fn, _USE_VFORK)\n                self._child_created = True\n            finally:\n                # be sure the FD is closed no matter what\n                os.close(errpipe_write)\n    \n            self._close_pipe_fds(p2cread, p2cwrite,\n                                 c2pread, c2pwrite,\n                                 errread, errwrite)\n    \n            # Wait for exec to fail or succeed; possibly raising an\n            # exception (limited in size)\n            errpipe_data = bytearray()\n            while True:\n                part = os.read(errpipe_read, 50000)\n                errpipe_data += part\n                if not part or len(errpipe_data) > 50000:\n                    break\n        finally:\n            # be sure the FD is closed no matter what\n            os.close(errpipe_read)\n    \n        if errpipe_data:\n            try:\n                pid, sts = os.waitpid(self.pid, 0)\n                if pid == self.pid:\n                    self._handle_exitstatus(sts)\n                else:\n                    self.returncode = sys.maxsize\n            except ChildProcessError:\n                pass\n    \n            try:\n                exception_name, hex_errno, err_msg = (\n                        errpipe_data.split(b':', 2))\n                # The encoding here should match the encoding\n                # written in by the subprocess implementations\n                # like _posixsubprocess\n                err_msg = err_msg.decode()\n            except ValueError:\n                exception_name = b'SubprocessError'\n                hex_errno = b'0'\n                err_msg = 'Bad exception data from child: {!r}'.format(\n                              bytes(errpipe_data))\n            child_exception_type = getattr(\n                    builtins, exception_name.decode('ascii'),\n                    SubprocessError)\n            if issubclass(child_exception_type, OSError) and hex_errno:\n                errno_num = int(hex_errno, 16)\n                if err_msg == \"noexec:chdir\":\n                    err_msg = \"\"\n                    # The error must be from chdir(cwd).\n                    err_filename = cwd\n                elif err_msg == \"noexec\":\n                    err_msg = \"\"\n                    err_filename = None\n                else:\n                    err_filename = orig_executable\n                if errno_num != 0:\n                    err_msg = os.strerror(errno_num)\n                if err_filename is not None:\n>                   raise child_exception_type(errno_num, err_msg, err_filename)\nE                   PermissionError: [Errno 13] Permission denied: '/usr/local/share/chromedriver-linux64'\n\n/opt/hostedtoolcache/Python/3.11.9/x64/lib/python3.11/subprocess.py:1955: PermissionError\n\nThe above exception was the direct cause of the following exception:\n\nchrome_options = <selenium.webdriver.chrome.options.Options object at 0x7ff68ef9c890>\n\n    @pytest.fixture()\n    def driver(chrome_options):\n        if os.getenv(\"CI\"): # Check if running on GitHub Actions\n            service = Service(chrome_driver_path)\n>           service.start()\n\nconftest.py:35: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n/opt/hostedtoolcache/Python/3.11.9/x64/lib/python3.11/site-packages/selenium/webdriver/common/service.py:98: in start\n    self._start_process(self._path)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <selenium.webdriver.chrome.service.Service object at 0x7ff68f15ebd0>\npath = '/usr/local/share/chromedriver-linux64'\n\n    def _start_process(self, path: str) -> None:\n        \"\"\"Creates a subprocess by executing the command provided.\n    \n        :param cmd: full command to execute\n        \"\"\"\n        cmd = [path]\n        cmd.extend(self.command_line_args())\n        close_file_descriptors = self.popen_kw.pop(\"close_fds\", system() != \"Windows\")\n        try:\n            start_info = None\n            if system() == \"Windows\":\n                start_info = subprocess.STARTUPINFO()\n                start_info.dwFlags = subprocess.CREATE_NEW_CONSOLE | subprocess.STARTF_USESHOWWINDOW\n                start_info.wShowWindow = subprocess.SW_HIDE\n    \n            self.process = subprocess.Popen(\n                cmd,\n                env=self.env,\n                close_fds=close_file_descriptors,\n                stdout=self.log_output,\n                stderr=self.log_output,\n                stdin=PIPE,\n                creationflags=self.creation_flags,\n                startupinfo=start_info,\n                **self.popen_kw,\n            )\n            logger.debug(\n                \"Started executable: `%s` in a child process with pid: %s using %s to output %s\",\n                self._path,\n                self.process.pid,\n                self.creation_flags,\n                self.log_output,\n            )\n        except TypeError:\n            raise\n        except OSError as err:\n            if err.errno == errno.EACCES:\n>               raise WebDriverException(\n                    f\"'{os.path.basename(self._path)}' executable may have wrong permissions.\"\n                ) from err\nE               selenium.common.exceptions.WebDriverException: Message: 'chromedriver-linux64' executable may have wrong permissions.\n\n/opt/hostedtoolcache/Python/3.11.9/x64/lib/python3.11/site-packages/selenium/webdriver/common/service.py:230: WebDriverException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "driver",
+    "time" : {
+      "start" : 1719412458690,
+      "stop" : 1719412458691,
+      "duration" : 1
+    },
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.WebDriverException: Message: 'chromedriver-linux64' executable may have wrong permissions.\n\n",
+    "statusTrace" : "  File \"/opt/hostedtoolcache/Python/3.11.9/x64/lib/python3.11/site-packages/pluggy/_callers.py\", line 167, in _multicall\n    teardown.throw(outcome._exception)\n  File \"/opt/hostedtoolcache/Python/3.11.9/x64/lib/python3.11/site-packages/_pytest/setuponly.py\", line 36, in pytest_fixture_setup\n    return (yield)\n            ^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.9/x64/lib/python3.11/site-packages/pluggy/_callers.py\", line 103, in _multicall\n    res = hook_impl.function(*args)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.9/x64/lib/python3.11/site-packages/_pytest/fixtures.py\", line 1122, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.9/x64/lib/python3.11/site-packages/_pytest/fixtures.py\", line 877, in call_fixture_func\n    fixture_result = next(generator)\n                     ^^^^^^^^^^^^^^^\n  File \"/home/runner/work/selenium_waits/selenium_waits/conftest.py\", line 35, in driver\n    service.start()\n  File \"/opt/hostedtoolcache/Python/3.11.9/x64/lib/python3.11/site-packages/selenium/webdriver/common/service.py\", line 98, in start\n    self._start_process(self._path)\n  File \"/opt/hostedtoolcache/Python/3.11.9/x64/lib/python3.11/site-packages/selenium/webdriver/common/service.py\", line 230, in _start_process\n    raise WebDriverException(\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1719412458464,
+      "stop" : 1719412458526,
+      "duration" : 62
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "chrome_options",
+    "time" : {
+      "start" : 1719412458690,
+      "stop" : 1719412458690,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_selenium_waits"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1530-434"
+  }, {
+    "name" : "thread",
+    "value" : "2237-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_selenium_waits"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "2d2979f01d600b30",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719412297867,
+        "stop" : 1719412307310,
+        "duration" : 9443
+      }
+    }, {
+      "uid" : "8482afaa8764f24a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719409844116,
+        "stop" : 1719409853441,
+        "duration" : 9325
+      }
+    }, {
+      "uid" : "c8b16e83617bfab5",
+      "status" : "broken",
+      "statusDetails" : "TypeError: expected str, bytes or os.PathLike object, not NoneType",
+      "time" : {
+        "start" : 1719407323230,
+        "stop" : 1719407323230,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "98b8cc4e7e40709e",
+      "status" : "broken",
+      "statusDetails" : "NameError: name 'chrome_driver_path' is not defined",
+      "time" : {
+        "start" : 1719407138732,
+        "stop" : 1719407138732,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "a6506ff5dbe0941f",
+      "status" : "broken",
+      "statusDetails" : "TypeError: expected str, bytes or os.PathLike object, not NoneType",
+      "time" : {
+        "start" : 1719406600820,
+        "stop" : 1719406600820,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "1200efffdd6c605",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719405189824,
+        "stop" : 1719405199010,
+        "duration" : 9186
+      }
+    }, {
+      "uid" : "5aaba6393e50e16f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719405007383,
+        "stop" : 1719405016626,
+        "duration" : 9243
+      }
+    }, {
+      "uid" : "761f2b5844d8a06b",
+      "status" : "broken",
+      "statusDetails" : "TypeError: expected str, bytes or os.PathLike object, not NoneType",
+      "time" : {
+        "start" : 1719404881224,
+        "stop" : 1719404881224,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "cacb556b7e628e20",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719403637541,
+        "stop" : 1719403646856,
+        "duration" : 9315
+      }
+    }, {
+      "uid" : "1a340b1a417cdcee",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719331491138,
+        "stop" : 1719331500297,
+        "duration" : 9159
+      }
+    }, {
+      "uid" : "8909dd503b7f8328",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719331103905,
+        "stop" : 1719331112830,
+        "duration" : 8925
+      }
+    }, {
+      "uid" : "21dea60383659cc3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719330831095,
+        "stop" : 1719330839960,
+        "duration" : 8865
+      }
+    }, {
+      "uid" : "6c99c3e38935d6f1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719330739604,
+        "stop" : 1719330748501,
+        "duration" : 8897
+      }
+    }, {
+      "uid" : "5a9d22f4da2dfc93",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719330083089,
+        "stop" : 1719330091943,
+        "duration" : 8854
+      }
+    }, {
+      "uid" : "ea1206894ae31c4b",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location",
+      "time" : {
+        "start" : 1719330016419,
+        "stop" : 1719330016419,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "faec7972eb91fa4f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719329606289,
+        "stop" : 1719329615232,
+        "duration" : 8943
+      }
+    }, {
+      "uid" : "212b7f3244d701ce",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719329225712,
+        "stop" : 1719329234638,
+        "duration" : 8926
+      }
+    }, {
+      "uid" : "d1f25bfacd1f011e",
+      "status" : "broken",
+      "statusDetails" : "FileNotFoundError: [WinError 2] The system cannot find the file specified",
+      "time" : {
+        "start" : 1719329066267,
+        "stop" : 1719329066267,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "6a91b593f78b3b51",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719328912483,
+        "stop" : 1719328921348,
+        "duration" : 8865
+      }
+    }, {
+      "uid" : "ee1cffc1e854350",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719325883791,
+        "stop" : 1719325892813,
+        "duration" : 9022
+      }
+    }, {
+      "uid" : "a0074a4e4fc443a4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719320789819,
+        "stop" : 1719320799651,
+        "duration" : 9832
+      }
+    }, {
+      "uid" : "9094e85ec22c1bfe",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719320560838,
+        "stop" : 1719320570261,
+        "duration" : 9423
+      }
+    }, {
+      "uid" : "277532ed65bb99a4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719319564216,
+        "stop" : 1719319573602,
+        "duration" : 9386
+      }
+    }, {
+      "uid" : "5273fc336af91c27",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719151065868,
+        "stop" : 1719151075394,
+        "duration" : 9526
+      }
+    }, {
+      "uid" : "6a0e1eef06cbcf5f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719150846082,
+        "stop" : 1719150855523,
+        "duration" : 9441
+      }
+    }, {
+      "uid" : "55744c304d7e4684",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719150699381,
+        "stop" : 1719150709274,
+        "duration" : 9893
+      }
+    }, {
+      "uid" : "6fbcc5fb3ebc8fc3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719150092154,
+        "stop" : 1719150101490,
+        "duration" : 9336
+      }
+    }, {
+      "uid" : "234c86dcac7fe498",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719128766175,
+        "stop" : 1719128775695,
+        "duration" : 9520
+      }
+    }, {
+      "uid" : "6dcb4725d2250303",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719127888827,
+        "stop" : 1719127898561,
+        "duration" : 9734
+      }
+    }, {
+      "uid" : "501fc75ccde1cb87",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719127355958,
+        "stop" : 1719127365774,
+        "duration" : 9816
+      }
+    }, {
+      "uid" : "b551e1b23ec4c492",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719045665799,
+        "stop" : 1719045675362,
+        "duration" : 9563
+      }
+    }, {
+      "uid" : "df97420f80d46d20",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719044911963,
+        "stop" : 1719044921624,
+        "duration" : 9661
+      }
+    }, {
+      "uid" : "ffa054fe0ff0625c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719044458172,
+        "stop" : 1719044467855,
+        "duration" : 9683
+      }
+    }, {
+      "uid" : "d786aaa2fbb8e48",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'Browser' object has no attribute 'implicitly_wait'",
+      "time" : {
+        "start" : 1719043867558,
+        "stop" : 1719043867558,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "c1493976a5025311",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719012756844,
+        "stop" : 1719012766308,
+        "duration" : 9464
+      }
+    }, {
+      "uid" : "20f514949bfd352d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1719012523784,
+        "stop" : 1719012533111,
+        "duration" : 9327
+      }
+    }, {
+      "uid" : "3d5a9b61bc7a3cfb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1718734881391,
+        "stop" : 1718734891751,
+        "duration" : 10360
+      }
+    }, {
+      "uid" : "536283f204e8e0ca",
+      "status" : "passed",
+      "time" : {
+        "start" : 1718734526302,
+        "stop" : 1718734535490,
+        "duration" : 9188
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 9,
+        "skipped" : 0,
+        "passed" : 7,
+        "unknown" : 0,
+        "total" : 16
+      },
+      "items" : [ {
+        "uid" : "f82a751b331a7aef",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/15//#testresult/f82a751b331a7aef",
+        "status" : "broken",
+        "statusDetails" : "TypeError: expected str, bytes or os.PathLike object, not NoneType",
+        "time" : {
+          "start" : 1719412183936,
+          "stop" : 1719412183936,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "4affc417dd85e90e",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/14//#testresult/4affc417dd85e90e",
+        "status" : "broken",
+        "statusDetails" : "TypeError: expected str, bytes or os.PathLike object, not NoneType",
+        "time" : {
+          "start" : 1719412051589,
+          "stop" : 1719412051589,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "1f91253f5b5eb9f3",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/13//#testresult/1f91253f5b5eb9f3",
+        "status" : "broken",
+        "statusDetails" : "TypeError: expected str, bytes or os.PathLike object, not NoneType",
+        "time" : {
+          "start" : 1719410376634,
+          "stop" : 1719410376634,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "ad7b7f1bbbdad414",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/12//#testresult/ad7b7f1bbbdad414",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: 'chromedriver-linux64' executable may have wrong permissions.",
+        "time" : {
+          "start" : 1719405781913,
+          "stop" : 1719405781913,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "9112a4a235eb8823",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/11//#testresult/9112a4a235eb8823",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719331622730,
+          "stop" : 1719331631251,
+          "duration" : 8521
+        }
+      }, {
+        "uid" : "6ff348f75b460ac6",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/10//#testresult/6ff348f75b460ac6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719331275482,
+          "stop" : 1719331283991,
+          "duration" : 8509
+        }
+      }, {
+        "uid" : "5b576d027fd4bbd7",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/9//#testresult/5b576d027fd4bbd7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719330229573,
+          "stop" : 1719330238057,
+          "duration" : 8484
+        }
+      }, {
+        "uid" : "563093d5709ebd4c",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/8//#testresult/563093d5709ebd4c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719329830554,
+          "stop" : 1719329839024,
+          "duration" : 8470
+        }
+      }, {
+        "uid" : "a5b18cf6691b5752",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/7//#testresult/a5b18cf6691b5752",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719329348722,
+          "stop" : 1719329357243,
+          "duration" : 8521
+        }
+      }, {
+        "uid" : "81fc178e2a99b43e",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/6//#testresult/81fc178e2a99b43e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719328464736,
+          "stop" : 1719328473237,
+          "duration" : 8501
+        }
+      }, {
+        "uid" : "55fc1125f73fa9df",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/5//#testresult/55fc1125f73fa9df",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719327467852,
+          "stop" : 1719327476370,
+          "duration" : 8518
+        }
+      }, {
+        "uid" : "18724708b9c88991",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/4//#testresult/18724708b9c88991",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55fd5fcaa6aa <unknown>\n#1 0x55fd5f98d0dc <unknown>\n#2 0x55fd5f9c202a <unknown>\n#3 0x55fd5f9be43b <unknown>\n#4 0x55fd5fa08ef9 <unknown>\n#5 0x55fd5f9fc613 <unknown>\n#6 0x55fd5f9cc4f7 <unknown>\n#7 0x55fd5f9cce4e <unknown>\n#8 0x55fd5fc7087b <unknown>\n#9 0x55fd5fc74921 <unknown>\n#10 0x55fd5fc5c36e <unknown>\n#11 0x55fd5fc75482 <unknown>\n#12 0x55fd5fc40ccf <unknown>\n#13 0x55fd5fc9a0a8 <unknown>\n#14 0x55fd5fc9a280 <unknown>\n#15 0x55fd5fca97dc <unknown>\n#16 0x7fb5f6694ac3 <unknown>",
+        "time" : {
+          "start" : 1719326203530,
+          "stop" : 1719326203530,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "8bd7812f8d396815",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/3//#testresult/8bd7812f8d396815",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x5565932566aa <unknown>\n#1 0x556592f390dc <unknown>\n#2 0x556592f6e02a <unknown>\n#3 0x556592f6a43b <unknown>\n#4 0x556592fb4ef9 <unknown>\n#5 0x556592fa8613 <unknown>\n#6 0x556592f784f7 <unknown>\n#7 0x556592f78e4e <unknown>\n#8 0x55659321c87b <unknown>\n#9 0x556593220921 <unknown>\n#10 0x55659320836e <unknown>\n#11 0x556593221482 <unknown>\n#12 0x5565931ecccf <unknown>\n#13 0x5565932460a8 <unknown>\n#14 0x556593246280 <unknown>\n#15 0x5565932557dc <unknown>\n#16 0x7f27af694ac3 <unknown>",
+        "time" : {
+          "start" : 1719324158466,
+          "stop" : 1719324158466,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "52ca36f18e7c293c",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/2//#testresult/52ca36f18e7c293c",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55da962496aa <unknown>\n#1 0x55da95f2c0dc <unknown>\n#2 0x55da95f6102a <unknown>\n#3 0x55da95f5d43b <unknown>\n#4 0x55da95fa7ef9 <unknown>\n#5 0x55da95f9b613 <unknown>\n#6 0x55da95f6b4f7 <unknown>\n#7 0x55da95f6be4e <unknown>\n#8 0x55da9620f87b <unknown>\n#9 0x55da96213921 <unknown>\n#10 0x55da961fb36e <unknown>\n#11 0x55da96214482 <unknown>\n#12 0x55da961dfccf <unknown>\n#13 0x55da962390a8 <unknown>\n#14 0x55da96239280 <unknown>\n#15 0x55da962487dc <unknown>\n#16 0x7fc6a3e94ac3 <unknown>",
+        "time" : {
+          "start" : 1719324131397,
+          "stop" : 1719324131397,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "db61cd27502a8cdf",
+        "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/1//#testresult/db61cd27502a8cdf",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.\n  (session not created: DevToolsActivePort file doesn't exist)\n  (The process started from chrome location /usr/bin/google-chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)\nStacktrace:\n#0 0x55e77d50f6aa <unknown>\n#1 0x55e77d1f20dc <unknown>\n#2 0x55e77d22702a <unknown>\n#3 0x55e77d22343b <unknown>\n#4 0x55e77d26def9 <unknown>\n#5 0x55e77d261613 <unknown>\n#6 0x55e77d2314f7 <unknown>\n#7 0x55e77d231e4e <unknown>\n#8 0x55e77d4d587b <unknown>\n#9 0x55e77d4d9921 <unknown>\n#10 0x55e77d4c136e <unknown>\n#11 0x55e77d4da482 <unknown>\n#12 0x55e77d4a5ccf <unknown>\n#13 0x55e77d4ff0a8 <unknown>\n#14 0x55e77d4ff280 <unknown>\n#15 0x55e77d50e7dc <unknown>\n#16 0x7fe096a94ac3 <unknown>",
+        "time" : {
+          "start" : 1719323939854,
+          "stop" : 1719323939854,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "a4e4e627fe9b1c3f.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,102 @@
+{
+  "uid" : "7257a622bb2f1d03",
+  "name" : "test_register_with_implicit_waits",
+  "fullName" : "tests.test_selenium_waits#test_register_with_implicit_waits",
+  "historyId" : "da0cec5103bd235948f004d488efeaf3",
+  "time" : {
+    "start" : 1719330016468,
+    "stop" : 1719330016468,
+    "duration" : 0
+  },
+  "description" : "Using Implicit waits",
+  "descriptionHtml" : "<p>Using Implicit waits</p>\n",
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location",
+  "statusTrace" : "self = <selenium.webdriver.common.driver_finder.DriverFinder object at 0x000001D08D4A5ED0>\n\n    def _binary_paths(self) -> dict:\n        if self._paths[\"driver_path\"]:\n            return self._paths\n    \n        browser = self._options.capabilities[\"browserName\"]\n        try:\n            path = self._service.path\n            if path:\n                logger.debug(\n                    \"Skipping Selenium Manager; path to %s driver specified in Service class: %s\", browser, path\n                )\n                if not Path(path).is_file():\n>                   raise ValueError(f\"The path is not a valid file: {path}\")\nE                   ValueError: The path is not a valid file: /usr/local/share/chromedriver-linux64\n\nenv\\lib\\site-packages\\selenium\\webdriver\\common\\driver_finder.py:64: ValueError\n\nThe above exception was the direct cause of the following exception:\n\nchrome_options = <selenium.webdriver.chrome.options.Options object at 0x000001D08D4A5C00>\n\n    @pytest.fixture()\n    def driver(chrome_options):\n        try:\n            service = Service('/usr/local/share/chromedriver-linux64')\n            service.start()\n        except Exception as ex:\n            print(ex)\n>       driver = webdriver.Chrome(options=chrome_options, service=service)\n\nconftest.py:36: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\nenv\\lib\\site-packages\\selenium\\webdriver\\chrome\\webdriver.py:45: in __init__\n    super().__init__(\nenv\\lib\\site-packages\\selenium\\webdriver\\chromium\\webdriver.py:50: in __init__\n    if finder.get_browser_path():\nenv\\lib\\site-packages\\selenium\\webdriver\\common\\driver_finder.py:47: in get_browser_path\n    return self._binary_paths()[\"browser_path\"]\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.common.driver_finder.DriverFinder object at 0x000001D08D4A5ED0>\n\n    def _binary_paths(self) -> dict:\n        if self._paths[\"driver_path\"]:\n            return self._paths\n    \n        browser = self._options.capabilities[\"browserName\"]\n        try:\n            path = self._service.path\n            if path:\n                logger.debug(\n                    \"Skipping Selenium Manager; path to %s driver specified in Service class: %s\", browser, path\n                )\n                if not Path(path).is_file():\n                    raise ValueError(f\"The path is not a valid file: {path}\")\n                self._paths[\"driver_path\"] = path\n            else:\n                output = SeleniumManager().binary_paths(self._to_args())\n                if Path(output[\"driver_path\"]).is_file():\n                    self._paths[\"driver_path\"] = output[\"driver_path\"]\n                else:\n                    raise ValueError(f'The driver path is not a valid file: {output[\"driver_path\"]}')\n                if Path(output[\"browser_path\"]).is_file():\n                    self._paths[\"browser_path\"] = output[\"browser_path\"]\n                else:\n                    raise ValueError(f'The browser path is not a valid file: {output[\"browser_path\"]}')\n        except Exception as err:\n            msg = f\"Unable to obtain driver for {browser}\"\n>           raise NoSuchDriverException(msg) from err\nE           selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location\n\nenv\\lib\\site-packages\\selenium\\webdriver\\common\\driver_finder.py:78: NoSuchDriverException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "chrome_options",
+    "time" : {
+      "start" : 1719330016470,
+      "stop" : 1719330016470,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "driver",
+    "time" : {
+      "start" : 1719330016470,
+      "stop" : 1719330016472,
+      "duration" : 2
+    },
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.NoSuchDriverException: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location\n\n",
+    "statusTrace" : "  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\pluggy\\_callers.py\", line 167, in _multicall\n    teardown.throw(outcome._exception)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\_pytest\\setuponly.py\", line 36, in pytest_fixture_setup\n    return (yield)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\pluggy\\_callers.py\", line 103, in _multicall\n    res = hook_impl.function(*args)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\_pytest\\fixtures.py\", line 1122, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\_pytest\\fixtures.py\", line 877, in call_fixture_func\n    fixture_result = next(generator)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\conftest.py\", line 36, in driver\n    driver = webdriver.Chrome(options=chrome_options, service=service)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\selenium\\webdriver\\chrome\\webdriver.py\", line 45, in __init__\n    super().__init__(\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\selenium\\webdriver\\chromium\\webdriver.py\", line 50, in __init__\n    if finder.get_browser_path():\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\selenium\\webdriver\\common\\driver_finder.py\", line 47, in get_browser_path\n    return self._binary_paths()[\"browser_path\"]\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\selenium\\webdriver\\common\\driver_finder.py\", line 78, in _binary_paths\n    raise NoSuchDriverException(msg) from err\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1719330002553,
+      "stop" : 1719330002653,
+      "duration" : 100
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_selenium_waits"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-7NMG6HA"
+  }, {
+    "name" : "thread",
+    "value" : "10700-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_selenium_waits"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7257a622bb2f1d03.json",
+  "parameterValues" : [ ]
+}
