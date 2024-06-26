@@ -42,7 +42,7 @@ def browser_management(chrome_options):
     if os.getenv("CI"): # Check if running on GitHub Actions
         service = Service("/usr/local/share/chromedriver-linux64")
         service.start()
-        options = webdriver.Chrome(service=service)
+        # options = webdriver.Chrome(service=service)
     options = webdriver.ChromeOptions()
     browser.config.driver_options = options
     browser.config.window_width = 100

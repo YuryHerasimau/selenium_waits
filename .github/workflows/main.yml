@@ -19,6 +19,9 @@ jobs:
       run: |
         pip install -r requirements.txt
 
+    - name: Grant permissions to chromedriver
+      run: chmod +x /usr/local/share/chromedriver-linux64
+
     - name: Run tests
       run: |
         pytest
