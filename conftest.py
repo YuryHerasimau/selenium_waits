@@ -46,7 +46,7 @@ def browser_management(chrome_options):
         try:
             service = Service("/usr/local/share/chromedriver-linux64")
             service.start()
-            options = webdriver.Chrome(service=service)
+            # options = webdriver.Chrome(service=service)
         except Exception as ex:
             print(ex)
     options = webdriver.ChromeOptions()
