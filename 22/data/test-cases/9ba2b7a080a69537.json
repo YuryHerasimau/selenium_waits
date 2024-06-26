@@ -1,0 +1,204 @@
+{
+  "uid" : "9ba2b7a080a69537",
+  "name" : "Test Authentication",
+  "fullName" : "tests.test_auth_with_selene#test_login",
+  "historyId" : "1a4d25bb59994fd792df79773c4c040e",
+  "time" : {
+    "start" : 1719330829495,
+    "stop" : 1719330829500,
+    "duration" : 5
+  },
+  "description" : "This test attempts to log into the website using a login and a password. Fails if any error happens.\n\nNote that this test does not test 2-Factor Authentication.",
+  "descriptionHtml" : "<p>This test attempts to log into the website using a login and a password. Fails if any error happens.</p>\n<p>Note that this test does not test 2-Factor Authentication.</p>\n",
+  "status" : "broken",
+  "statusMessage" : "urllib3.exceptions.LocationValueError: No host specified.",
+  "statusTrace" : "browser_management = None, fake_login = 'Adam Winters'\nfake_password = 'Them physical officer create believe.\\nOld pretty third address take. Pass generation price find threat. Difference and the cause kitchen side.'\n\n    @allure.title(\"Test Authentication\")\n    @allure.description(\n        \"This test attempts to log into the website using a login and a password. Fails if any error happens.\\n\\nNote that this test does not test 2-Factor Authentication.\"\n    )\n    @allure.tag(\"NewUI\", \"Essentials\", \"Authentication\")\n    @allure.severity(allure.severity_level.CRITICAL)\n    @allure.label(\"owner\", \"John Doe\")\n    @allure.link(base_url, name=\"Website\")\n    @allure.issue(\"AUTH-123\")\n    @allure.testcase(\"TMS-456\")\n    @speed_test\n    def test_login(browser_management, fake_login, fake_password):\n    \n        with allure.step(\"Открыть главную страницу\"):\n>           auth_with_selene.visit(base_url)\n\ntests\\test_auth_with_selene.py:21: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\npages\\auth_with_selene.py:6: in visit\n    browser.open(url)\nenv\\lib\\site-packages\\selene\\core\\_browser.py:93: in open\n    self.config._executor.get_url(relative_or_absolute_url)\nenv\\lib\\site-packages\\selene\\core\\configuration.py:263: in get_url\n    self.config._driver_get_url_strategy(self.config)(url)\nenv\\lib\\site-packages\\selene\\core\\configuration.py:178: in get\n    driver = config.driver\nenv\\lib\\site-packages\\selene\\core\\configuration.py:305: in __get__\n    driver = config.build_driver_strategy(config)\nenv\\lib\\site-packages\\selene\\core\\configuration.py:129: in _build_local_driver_by_name_or_remote_by_url_and_options\n    return {  # type: ignore\nenv\\lib\\site-packages\\selene\\core\\configuration.py:89: in build_remote_driver\n    return Remote(\nenv\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:208: in __init__\n    self.start_session(capabilities)\nenv\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:292: in start_session\n    response = self.execute(Command.NEW_SESSION, caps)[\"value\"]\nenv\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:345: in execute\n    response = self.command_executor.execute(driver_command, params)\nenv\\lib\\site-packages\\selenium\\webdriver\\remote\\remote_connection.py:302: in execute\n    return self._request(command_info[0], url, body=data)\nenv\\lib\\site-packages\\selenium\\webdriver\\remote\\remote_connection.py:322: in _request\n    response = self._conn.request(method, url, body=body, headers=headers)\nenv\\lib\\site-packages\\urllib3\\_request_methods.py:144: in request\n    return self.request_encode_body(\nenv\\lib\\site-packages\\urllib3\\_request_methods.py:279: in request_encode_body\n    return self.urlopen(method, url, **extra_kw)\nenv\\lib\\site-packages\\urllib3\\poolmanager.py:433: in urlopen\n    conn = self.connection_from_host(u.host, port=u.port, scheme=u.scheme)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <urllib3.poolmanager.PoolManager object at 0x000002A895604070>, host = None, port = None, scheme = None, pool_kwargs = None\n\n    def connection_from_host(\n        self,\n        host: str | None,\n        port: int | None = None,\n        scheme: str | None = \"http\",\n        pool_kwargs: dict[str, typing.Any] | None = None,\n    ) -> HTTPConnectionPool:\n        \"\"\"\n        Get a :class:`urllib3.connectionpool.ConnectionPool` based on the host, port, and scheme.\n    \n        If ``port`` isn't given, it will be derived from the ``scheme`` using\n        ``urllib3.connectionpool.port_by_scheme``. If ``pool_kwargs`` is\n        provided, it is merged with the instance's ``connection_pool_kw``\n        variable and used to create the new connection pool, if one is\n        needed.\n        \"\"\"\n    \n        if not host:\n>           raise LocationValueError(\"No host specified.\")\nE           urllib3.exceptions.LocationValueError: No host specified.\n\nenv\\lib\\site-packages\\urllib3\\poolmanager.py:295: LocationValueError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1719330811734,
+      "stop" : 1719330811830,
+      "duration" : 96
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "fake_password",
+    "time" : {
+      "start" : 1719330829404,
+      "stop" : 1719330829495,
+      "duration" : 91
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "fake_login",
+    "time" : {
+      "start" : 1719330829294,
+      "stop" : 1719330829403,
+      "duration" : 109
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "chrome_options",
+    "time" : {
+      "start" : 1719330829294,
+      "stop" : 1719330829294,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "browser_management",
+    "time" : {
+      "start" : 1719330829294,
+      "stop" : 1719330829294,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "This test attempts to log into the website using a login and a password. Fails if any error happens.\n\nNote that this test does not test 2-Factor Authentication.",
+    "status" : "broken",
+    "statusMessage" : "urllib3.exceptions.LocationValueError: No host specified.",
+    "statusTrace" : "browser_management = None, fake_login = 'Adam Winters'\nfake_password = 'Them physical officer create believe.\\nOld pretty third address take. Pass generation price find threat. Difference and the cause kitchen side.'\n\n    @allure.title(\"Test Authentication\")\n    @allure.description(\n        \"This test attempts to log into the website using a login and a password. Fails if any error happens.\\n\\nNote that this test does not test 2-Factor Authentication.\"\n    )\n    @allure.tag(\"NewUI\", \"Essentials\", \"Authentication\")\n    @allure.severity(allure.severity_level.CRITICAL)\n    @allure.label(\"owner\", \"John Doe\")\n    @allure.link(base_url, name=\"Website\")\n    @allure.issue(\"AUTH-123\")\n    @allure.testcase(\"TMS-456\")\n    @speed_test\n    def test_login(browser_management, fake_login, fake_password):\n    \n        with allure.step(\"Открыть главную страницу\"):\n>           auth_with_selene.visit(base_url)\n\ntests\\test_auth_with_selene.py:21: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\npages\\auth_with_selene.py:6: in visit\n    browser.open(url)\nenv\\lib\\site-packages\\selene\\core\\_browser.py:93: in open\n    self.config._executor.get_url(relative_or_absolute_url)\nenv\\lib\\site-packages\\selene\\core\\configuration.py:263: in get_url\n    self.config._driver_get_url_strategy(self.config)(url)\nenv\\lib\\site-packages\\selene\\core\\configuration.py:178: in get\n    driver = config.driver\nenv\\lib\\site-packages\\selene\\core\\configuration.py:305: in __get__\n    driver = config.build_driver_strategy(config)\nenv\\lib\\site-packages\\selene\\core\\configuration.py:129: in _build_local_driver_by_name_or_remote_by_url_and_options\n    return {  # type: ignore\nenv\\lib\\site-packages\\selene\\core\\configuration.py:89: in build_remote_driver\n    return Remote(\nenv\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:208: in __init__\n    self.start_session(capabilities)\nenv\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:292: in start_session\n    response = self.execute(Command.NEW_SESSION, caps)[\"value\"]\nenv\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:345: in execute\n    response = self.command_executor.execute(driver_command, params)\nenv\\lib\\site-packages\\selenium\\webdriver\\remote\\remote_connection.py:302: in execute\n    return self._request(command_info[0], url, body=data)\nenv\\lib\\site-packages\\selenium\\webdriver\\remote\\remote_connection.py:322: in _request\n    response = self._conn.request(method, url, body=body, headers=headers)\nenv\\lib\\site-packages\\urllib3\\_request_methods.py:144: in request\n    return self.request_encode_body(\nenv\\lib\\site-packages\\urllib3\\_request_methods.py:279: in request_encode_body\n    return self.urlopen(method, url, **extra_kw)\nenv\\lib\\site-packages\\urllib3\\poolmanager.py:433: in urlopen\n    conn = self.connection_from_host(u.host, port=u.port, scheme=u.scheme)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <urllib3.poolmanager.PoolManager object at 0x000002A895604070>, host = None, port = None, scheme = None, pool_kwargs = None\n\n    def connection_from_host(\n        self,\n        host: str | None,\n        port: int | None = None,\n        scheme: str | None = \"http\",\n        pool_kwargs: dict[str, typing.Any] | None = None,\n    ) -> HTTPConnectionPool:\n        \"\"\"\n        Get a :class:`urllib3.connectionpool.ConnectionPool` based on the host, port, and scheme.\n    \n        If ``port`` isn't given, it will be derived from the ``scheme`` using\n        ``urllib3.connectionpool.port_by_scheme``. If ``pool_kwargs`` is\n        provided, it is merged with the instance's ``connection_pool_kw``\n        variable and used to create the new connection pool, if one is\n        needed.\n        \"\"\"\n    \n        if not host:\n>           raise LocationValueError(\"No host specified.\")\nE           urllib3.exceptions.LocationValueError: No host specified.\n\nenv\\lib\\site-packages\\urllib3\\poolmanager.py:295: LocationValueError",
+    "steps" : [ {
+      "name" : "Открыть главную страницу",
+      "time" : {
+        "start" : 1719330829495,
+        "stop" : 1719330829497,
+        "duration" : 2
+      },
+      "status" : "broken",
+      "statusMessage" : "urllib3.exceptions.LocationValueError: No host specified.\n",
+      "statusTrace" : "  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\tests\\test_auth_with_selene.py\", line 21, in test_login\n    auth_with_selene.visit(base_url)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\pages\\auth_with_selene.py\", line 6, in visit\n    browser.open(url)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\selene\\core\\_browser.py\", line 93, in open\n    self.config._executor.get_url(relative_or_absolute_url)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\selene\\core\\configuration.py\", line 263, in get_url\n    self.config._driver_get_url_strategy(self.config)(url)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\selene\\core\\configuration.py\", line 178, in get\n    driver = config.driver\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\selene\\core\\configuration.py\", line 305, in __get__\n    driver = config.build_driver_strategy(config)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\selene\\core\\configuration.py\", line 129, in _build_local_driver_by_name_or_remote_by_url_and_options\n    return {  # type: ignore\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\selene\\core\\configuration.py\", line 89, in build_remote_driver\n    return Remote(\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 208, in __init__\n    self.start_session(capabilities)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 292, in start_session\n    response = self.execute(Command.NEW_SESSION, caps)[\"value\"]\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 345, in execute\n    response = self.command_executor.execute(driver_command, params)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\selenium\\webdriver\\remote\\remote_connection.py\", line 302, in execute\n    return self._request(command_info[0], url, body=data)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\selenium\\webdriver\\remote\\remote_connection.py\", line 322, in _request\n    response = self._conn.request(method, url, body=body, headers=headers)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\urllib3\\_request_methods.py\", line 144, in request\n    return self.request_encode_body(\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\urllib3\\_request_methods.py\", line 279, in request_encode_body\n    return self.urlopen(method, url, **extra_kw)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\urllib3\\poolmanager.py\", line 433, in urlopen\n    conn = self.connection_from_host(u.host, port=u.port, scheme=u.scheme)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\urllib3\\poolmanager.py\", line 295, in connection_from_host\n    raise LocationValueError(\"No host specified.\")\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser_management::0",
+    "time" : {
+      "start" : 1719330829688,
+      "stop" : 1719330829690,
+      "duration" : 2
+    },
+    "status" : "broken",
+    "statusMessage" : "urllib3.exceptions.LocationValueError: No host specified.\n",
+    "statusTrace" : "  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\allure_commons\\_allure.py\", line 221, in __call__\n    return self._fixture_function(*args, **kwargs)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\_pytest\\fixtures.py\", line 893, in _teardown_yield_fixture\n    next(it)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\conftest.py\", line 61, in browser_management\n    browser.driver.get_screenshot_as_png(),\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\selene\\core\\_browser.py\", line 34, in driver\n    return self.config.driver\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\selene\\core\\configuration.py\", line 305, in __get__\n    driver = config.build_driver_strategy(config)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\selene\\core\\configuration.py\", line 129, in _build_local_driver_by_name_or_remote_by_url_and_options\n    return {  # type: ignore\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\selene\\core\\configuration.py\", line 89, in build_remote_driver\n    return Remote(\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 208, in __init__\n    self.start_session(capabilities)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 292, in start_session\n    response = self.execute(Command.NEW_SESSION, caps)[\"value\"]\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 345, in execute\n    response = self.command_executor.execute(driver_command, params)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\selenium\\webdriver\\remote\\remote_connection.py\", line 302, in execute\n    return self._request(command_info[0], url, body=data)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\selenium\\webdriver\\remote\\remote_connection.py\", line 322, in _request\n    response = self._conn.request(method, url, body=body, headers=headers)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\urllib3\\_request_methods.py\", line 144, in request\n    return self.request_encode_body(\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\urllib3\\_request_methods.py\", line 279, in request_encode_body\n    return self.urlopen(method, url, **extra_kw)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\urllib3\\poolmanager.py\", line 433, in urlopen\n    conn = self.connection_from_host(u.host, port=u.port, scheme=u.scheme)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\urllib3\\poolmanager.py\", line 295, in connection_from_host\n    raise LocationValueError(\"No host specified.\")\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "Essentials"
+  }, {
+    "name" : "tag",
+    "value" : "NewUI"
+  }, {
+    "name" : "owner",
+    "value" : "John Doe"
+  }, {
+    "name" : "tag",
+    "value" : "Authentication"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_auth_with_selene"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-7NMG6HA"
+  }, {
+    "name" : "thread",
+    "value" : "6536-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_auth_with_selene"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "TMS-456",
+    "url" : "TMS-456",
+    "type" : "tms"
+  }, {
+    "name" : "AUTH-123",
+    "url" : "AUTH-123",
+    "type" : "issue"
+  }, {
+    "name" : "Website",
+    "url" : "https://victoretc.github.io/selenium_waits/",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "Authentication", "Essentials", "NewUI" ]
+  },
+  "source" : "9ba2b7a080a69537.json",
+  "parameterValues" : [ ]
+}
