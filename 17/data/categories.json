@@ -1,0 +1,78 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.WebDriverException: Message: 'chromedriver-linux64' executable may have wrong permissions.",
+      "children" : [ {
+        "name" : "test_auth_positive",
+        "uid" : "fe34b244ad2e8d11",
+        "parentUid" : "739e7f84e8f1257fdd3c7eb127f18ff4",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719413253039,
+          "stop" : 1719413253039,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "9e8cd41c982d474b",
+        "parentUid" : "739e7f84e8f1257fdd3c7eb127f18ff4",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719413253179,
+          "stop" : 1719413253179,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "7051a5eec9b9b9f2",
+        "parentUid" : "739e7f84e8f1257fdd3c7eb127f18ff4",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719413253237,
+          "stop" : 1719413253237,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "1db6061ffafc8d73",
+        "parentUid" : "739e7f84e8f1257fdd3c7eb127f18ff4",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719413253285,
+          "stop" : 1719413253285,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "8d705f8e5bca4620",
+        "parentUid" : "739e7f84e8f1257fdd3c7eb127f18ff4",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719413253331,
+          "stop" : 1719413253331,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "739e7f84e8f1257fdd3c7eb127f18ff4"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
