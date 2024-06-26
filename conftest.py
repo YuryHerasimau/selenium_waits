@@ -1,5 +1,5 @@
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
+# from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
 from selene import browser, support
@@ -14,7 +14,8 @@ from utils.urls import base_url
 
 @pytest.fixture
 def chrome_options():
-    options = Options()
+    # options = Options()
+    options = webdriver.ChromeOptions()
     options.add_argument("--headless")
     options.add_argument("--start-maximized")
     options.add_argument("disable-infobars")
@@ -49,8 +50,8 @@ def browser_management(chrome_options):
             # options = webdriver.Chrome(service=service)
         except Exception as ex:
             print(ex)
-    options = webdriver.ChromeOptions()
-    browser.config.driver_options = options
+    # options = webdriver.ChromeOptions()
+    browser.config.driver_options = chrome_options
     browser.config.window_width = 100
     browser.config.window_height = 500
     browser.config.timeout = 10
