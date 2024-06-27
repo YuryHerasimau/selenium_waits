@@ -31,7 +31,7 @@ def chrome_options():
 def driver(chrome_options):
     if os.getenv("CI"): # Check if running on GitHub Actions
         try:
-            service = Service("/usr/local/share/chromedriver-linux64")
+            service = Service(os.getenv("CHROMEDRIVER_PATH"))
             service.start()
         except Exception as ex:
             print(ex)
@@ -45,7 +45,7 @@ def driver(chrome_options):
 def browser_management(chrome_options):
     if os.getenv("CI"): # Check if running on GitHub Actions
         try:
-            service = Service("/usr/local/share/chromedriver-linux64")
+            service = Service(os.getenv("CHROMEDRIVER_PATH"))
             service.start()
             # options = webdriver.Chrome(service=service)
         except Exception as ex:
