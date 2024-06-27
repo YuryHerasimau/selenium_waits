@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Jun 27 10:42:18 GMT 2024","Thu Jun 27 10:42:26 GMT 2024","8485","tests","test_auth_with_selene","","","","Test Authentication","This test attempts to log into the website using a login and a password. Fails if any error happens.
+
+Note that this test does not test 2-Factor Authentication."
+"passed","Thu Jun 27 10:42:09 GMT 2024","Thu Jun 27 10:42:18 GMT 2024","8620","tests","test_auth","","","","test_auth_positive",""
+"passed","Thu Jun 27 10:42:44 GMT 2024","Thu Jun 27 10:42:55 GMT 2024","10380","tests","test_selenium_waits","","","","test_register_with_time_sleep","Using time.sleep()"
+"passed","Thu Jun 27 10:42:36 GMT 2024","Thu Jun 27 10:42:44 GMT 2024","8361","tests","test_selenium_waits","","","","test_register_with_implicit_waits","Using Implicit waits"
+"passed","Thu Jun 27 10:42:27 GMT 2024","Thu Jun 27 10:42:35 GMT 2024","8527","tests","test_selenium_waits","","","","test_register_with_explicit_waits","Using Explicit waits and Expected Conditions"
