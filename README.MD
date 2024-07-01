@@ -22,6 +22,10 @@ By comparing the execution times of tests utilizing Explicit Waits, Implicit Wai
 | time.sleep(), secs=5 (twice)    | 10.92                     |
 | Selene, timeout=10              | 10.56                     |
 
+### Allure Report with history action
+
+The workflow of running tests, building and publishing Allure Report with history using GitHub Actions has been automated.
+
 ### Test Case Details
 
 - **Title:** Registration Functionality Check on the Website

@@ -1,5 +1,4 @@
 from selenium import webdriver
-# from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import WebDriverWait
 from selene import browser, support
@@ -14,7 +13,6 @@ from utils.urls import base_url
 
 @pytest.fixture
 def chrome_options():
-    # options = Options()
     options = webdriver.ChromeOptions()
     options.add_argument("--headless")
     options.add_argument("--start-maximized")
@@ -27,47 +25,40 @@ def chrome_options():
     return options
 
 
-@pytest.fixture()
-def driver(chrome_options):
-    if os.getenv("CI"): # Check if running on GitHub Actions
+def remote_launch():
+    if os.getenv("CI"):  # Check if running on GitHub Actions
         try:
             service = Service(os.getenv("CHROMEDRIVER_PATH"))
             service.start()
         except Exception as ex:
             print(ex)
+
+
+@pytest.fixture
+def driver(chrome_options):
+    remote_launch()
     driver = webdriver.Chrome(options=chrome_options)
     driver.implicitly_wait(10)
     yield driver
     driver.quit()
 
 
-@pytest.fixture()  # autouse=True
+@pytest.fixture  # autouse=True
 def browser_management(chrome_options):
-    if os.getenv("CI"): # Check if running on GitHub Actions
-        try:
-            service = Service(os.getenv("CHROMEDRIVER_PATH"))
-            service.start()
-            # options = webdriver.Chrome(service=service)
-        except Exception as ex:
-            print(ex)
-    # options = webdriver.ChromeOptions()
+    remote_launch()
     browser.config.driver_options = chrome_options
     browser.config.window_width = 100
     browser.config.window_height = 500
     browser.config.timeout = 10
-
     browser.config._wait_decorator = support._logging.wait_with(
         context=allure_commons._allure.StepContext
     )
-
     yield
-
     allure.attach(
         browser.driver.get_screenshot_as_png(),
         name="screenshot",
         attachment_type=allure.attachment_type.PNG,
     )
-
     browser.quit()
 
 
