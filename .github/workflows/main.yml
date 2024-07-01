@@ -1,7 +1,6 @@
 name: tests_with_allure
 
-on:
-  workflow_dispatch:
+on: [push]
 
 jobs:
   build:

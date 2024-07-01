@@ -26,12 +26,12 @@ def chrome_options():
 
 
 def remote_launch():
-    if os.getenv("CI"):  # Check if running on GitHub Actions
-        try:
+    try:
+        if os.getenv("CI"):  # Check if running on GitHub Actions
             service = Service(os.getenv("CHROMEDRIVER_PATH"))
             service.start()
-        except Exception as ex:
-            print(ex)
+    except Exception as ex:
+        print(ex)
 
 
 @pytest.fixture
@@ -43,7 +43,7 @@ def driver(chrome_options):
     driver.quit()
 
 
-@pytest.fixture  # autouse=True
+@pytest.fixture
 def browser_management(chrome_options):
     remote_launch()
     browser.config.driver_options = chrome_options
