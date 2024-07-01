@@ -1,0 +1,86 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "tests",
+    "children" : [ {
+      "name" : "test_auth",
+      "children" : [ {
+        "name" : "test_auth_positive",
+        "uid" : "8a4e7616662c86d7",
+        "parentUid" : "2d60e98e08cb0ddbe5ae65b440a9833c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719855809049,
+          "stop" : 1719855817693,
+          "duration" : 8644
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2d60e98e08cb0ddbe5ae65b440a9833c"
+    }, {
+      "name" : "test_auth_with_selene",
+      "children" : [ {
+        "name" : "Test Authentication",
+        "uid" : "7b8e39466b052e09",
+        "parentUid" : "af7fd5ba49c0afbeb3cb920f1a7e2855",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719855817786,
+          "stop" : 1719855826240,
+          "duration" : 8454
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "af7fd5ba49c0afbeb3cb920f1a7e2855"
+    }, {
+      "name" : "test_selenium_waits",
+      "children" : [ {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "90ffd62af24ae02f",
+        "parentUid" : "ddc4ca0fefa9237e61f7a8ead6219b13",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719855826539,
+          "stop" : 1719855835004,
+          "duration" : 8465
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "a5215952215710bb",
+        "parentUid" : "ddc4ca0fefa9237e61f7a8ead6219b13",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719855835270,
+          "stop" : 1719855843642,
+          "duration" : 8372
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "776008f6c5e8cf6b",
+        "parentUid" : "ddc4ca0fefa9237e61f7a8ead6219b13",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719855843909,
+          "stop" : 1719855854286,
+          "duration" : 10377
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ddc4ca0fefa9237e61f7a8ead6219b13"
+    } ],
+    "uid" : "e387fa4bb326b54ea8c19c2822aba374"
+  } ],
+  "name" : "suites"
+}

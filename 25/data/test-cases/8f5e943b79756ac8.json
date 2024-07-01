@@ -1,0 +1,129 @@
+{
+  "uid" : "8f5e943b79756ac8",
+  "name" : "Test Authentication",
+  "fullName" : "tests.test_auth_with_selene#test_login",
+  "historyId" : "1a4d25bb59994fd792df79773c4c040e",
+  "time" : {
+    "start" : 1719407138713,
+    "stop" : 1719407138713,
+    "duration" : 0
+  },
+  "description" : "This test attempts to log into the website using a login and a password. Fails if any error happens.\n\nNote that this test does not test 2-Factor Authentication.",
+  "descriptionHtml" : "<p>This test attempts to log into the website using a login and a password. Fails if any error happens.</p>\n<p>Note that this test does not test 2-Factor Authentication.</p>\n",
+  "status" : "broken",
+  "statusMessage" : "NameError: name 'chrome_driver_path' is not defined",
+  "statusTrace" : "chrome_options = <selenium.webdriver.chrome.options.Options object at 0x0000025E9AF70610>\n\n    @pytest.fixture()  # autouse=True\n    def browser_management(chrome_options):\n>       service = Service(chrome_driver_path)\nE       NameError: name 'chrome_driver_path' is not defined\n\nconftest.py:47: NameError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser_management",
+    "time" : {
+      "start" : 1719407138714,
+      "stop" : 1719407138714,
+      "duration" : 0
+    },
+    "status" : "broken",
+    "statusMessage" : "NameError: name 'chrome_driver_path' is not defined\n",
+    "statusTrace" : "  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\pluggy\\_callers.py\", line 167, in _multicall\n    teardown.throw(outcome._exception)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\_pytest\\setuponly.py\", line 36, in pytest_fixture_setup\n    return (yield)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\pluggy\\_callers.py\", line 103, in _multicall\n    res = hook_impl.function(*args)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\_pytest\\fixtures.py\", line 1122, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\env\\lib\\site-packages\\_pytest\\fixtures.py\", line 877, in call_fixture_func\n    fixture_result = next(generator)\n  File \"E:\\IT\\AQA\\rrs\\python\\lessons\\practice_3\\conftest.py\", line 47, in browser_management\n    service = Service(chrome_driver_path)\n",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "chrome_options",
+    "time" : {
+      "start" : 1719407138714,
+      "stop" : 1719407138714,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1719407138486,
+      "stop" : 1719407138590,
+      "duration" : 104
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "NewUI"
+  }, {
+    "name" : "tag",
+    "value" : "Essentials"
+  }, {
+    "name" : "owner",
+    "value" : "John Doe"
+  }, {
+    "name" : "tag",
+    "value" : "Authentication"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_auth_with_selene"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-7NMG6HA"
+  }, {
+    "name" : "thread",
+    "value" : "3116-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_auth_with_selene"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "TMS-456",
+    "url" : "TMS-456",
+    "type" : "tms"
+  }, {
+    "name" : "AUTH-123",
+    "url" : "AUTH-123",
+    "type" : "issue"
+  }, {
+    "name" : "Website",
+    "url" : "https://victoretc.github.io/selenium_waits/",
+    "type" : "link"
+  } ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "Authentication", "Essentials", "NewUI" ]
+  },
+  "source" : "8f5e943b79756ac8.json",
+  "parameterValues" : [ ]
+}
