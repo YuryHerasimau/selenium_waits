@@ -11,6 +11,18 @@
     "total" : 5
   }
 }, {
+  "buildOrder" : 25,
+  "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/25/",
+  "reportName" : "Allure Report with history",
+  "data" : {
+    "failed" : 0,
+    "broken" : 0,
+    "skipped" : 0,
+    "passed" : 5,
+    "unknown" : 0,
+    "total" : 5
+  }
+}, {
   "buildOrder" : 24,
   "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/24/",
   "reportName" : "Allure Report with history",
@@ -217,18 +229,6 @@
 }, {
   "buildOrder" : 7,
   "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/7/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "failed" : 0,
-    "broken" : 1,
-    "skipped" : 0,
-    "passed" : 4,
-    "unknown" : 0,
-    "total" : 5
-  }
-}, {
-  "buildOrder" : 6,
-  "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/6/",
   "reportName" : "Allure Report with history",
   "data" : {
     "failed" : 0,

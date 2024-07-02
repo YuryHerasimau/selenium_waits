@@ -1,8 +1,8 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon Jul 01 17:43:46 GMT 2024","Mon Jul 01 17:43:55 GMT 2024","8465","tests","test_selenium_waits","","","","test_register_with_explicit_waits","Using Explicit waits and Expected Conditions"
-"passed","Mon Jul 01 17:44:03 GMT 2024","Mon Jul 01 17:44:14 GMT 2024","10377","tests","test_selenium_waits","","","","test_register_with_time_sleep","Using time.sleep()"
-"passed","Mon Jul 01 17:43:29 GMT 2024","Mon Jul 01 17:43:37 GMT 2024","8644","tests","test_auth","","","","test_auth_positive",""
-"passed","Mon Jul 01 17:43:37 GMT 2024","Mon Jul 01 17:43:46 GMT 2024","8454","tests","test_auth_with_selene","","","","Test Authentication","This test attempts to log into the website using a login and a password. Fails if any error happens.
+"passed","Tue Jul 02 12:57:16 GMT 2024","Tue Jul 02 12:57:24 GMT 2024","8512","tests","test_selenium_waits","","","","test_register_with_explicit_waits","Using Explicit waits and Expected Conditions"
+"passed","Tue Jul 02 12:57:24 GMT 2024","Tue Jul 02 12:57:33 GMT 2024","8329","tests","test_selenium_waits","","","","test_register_with_implicit_waits","Using Implicit waits"
+"passed","Tue Jul 02 12:56:58 GMT 2024","Tue Jul 02 12:57:07 GMT 2024","8596","tests","test_auth","","","","test_auth_positive",""
+"passed","Tue Jul 02 12:57:33 GMT 2024","Tue Jul 02 12:57:43 GMT 2024","10358","tests","test_selenium_waits","","","","test_register_with_time_sleep","Using time.sleep()"
+"passed","Tue Jul 02 12:57:07 GMT 2024","Tue Jul 02 12:57:15 GMT 2024","8483","tests","test_auth_with_selene","","","","Test Authentication","This test attempts to log into the website using a login and a password. Fails if any error happens.
 
 Note that this test does not test 2-Factor Authentication."
-"passed","Mon Jul 01 17:43:55 GMT 2024","Mon Jul 01 17:44:03 GMT 2024","8372","tests","test_selenium_waits","","","","test_register_with_implicit_waits","Using Implicit waits"

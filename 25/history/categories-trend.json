@@ -4,6 +4,11 @@
   "reportName" : "Allure Report with history",
   "data" : { }
 }, {
+  "buildOrder" : 25,
+  "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/25/",
+  "reportName" : "Allure Report with history",
+  "data" : { }
+}, {
   "buildOrder" : 24,
   "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/24/",
   "reportName" : "Allure Report with history",
@@ -117,13 +122,6 @@
 }, {
   "buildOrder" : 7,
   "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/7/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "Test defects" : 1
-  }
-}, {
-  "buildOrder" : 6,
-  "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/6/",
   "reportName" : "Allure Report with history",
   "data" : {
     "Test defects" : 1

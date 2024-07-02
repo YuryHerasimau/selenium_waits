@@ -3,6 +3,13 @@
   "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/25/",
   "reportName" : "Allure Report with history",
   "data" : {
+    "duration" : 45208
+  }
+}, {
+  "buildOrder" : 25,
+  "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/25/",
+  "reportName" : "Allure Report with history",
+  "data" : {
     "duration" : 45237
   }
 }, {
@@ -130,12 +137,5 @@
   "reportName" : "Allure Report with history",
   "data" : {
     "duration" : 37997
-  }
-}, {
-  "buildOrder" : 6,
-  "reportUrl" : "https://YuryHerasimau.github.io/selenium_waits/6/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "duration" : 37057
   }
 } ]
