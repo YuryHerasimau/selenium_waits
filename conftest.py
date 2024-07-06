@@ -25,7 +25,7 @@ def chrome_options():
     return options
 
 
-def remote_launch():
+def start_chrome_service_based_on_env():
     try:
         if os.getenv("CI"):  # Check if running on GitHub Actions
             service = Service(os.getenv("CHROMEDRIVER_PATH"))
@@ -36,7 +36,7 @@ def remote_launch():
 
 @pytest.fixture
 def driver(chrome_options):
-    remote_launch()
+    start_chrome_service_based_on_env()
     driver = webdriver.Chrome(options=chrome_options)
     driver.implicitly_wait(10)
     yield driver
@@ -45,10 +45,10 @@ def driver(chrome_options):
 
 @pytest.fixture
 def browser_management(chrome_options):
-    remote_launch()
+    start_chrome_service_based_on_env()
     browser.config.driver_options = chrome_options
-    browser.config.window_width = 100
-    browser.config.window_height = 500
+    browser.config.window_width = 800
+    browser.config.window_height = 600
     browser.config.timeout = 10
     browser.config._wait_decorator = support._logging.wait_with(
         context=allure_commons._allure.StepContext
