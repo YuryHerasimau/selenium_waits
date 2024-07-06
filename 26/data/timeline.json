@@ -1,0 +1,3407 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "DESKTOP-7NMG6HA",
+    "children" : [ {
+      "name" : "12428-MainThread",
+      "children" : [ {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "828525da488227bd",
+        "parentUid" : "3ef02b2853dc9f2aeb5de52f1cee1d62",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719405206448,
+          "stop" : 1719405215232,
+          "duration" : 8784
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "ddbd73197a8b389b",
+        "parentUid" : "3ef02b2853dc9f2aeb5de52f1cee1d62",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719405160208,
+          "stop" : 1719405169441,
+          "duration" : 9233
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "cfd7936c01bd12c",
+        "parentUid" : "3ef02b2853dc9f2aeb5de52f1cee1d62",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719405222689,
+          "stop" : 1719405233284,
+          "duration" : 10595
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "1da9a377eae7c378",
+        "parentUid" : "3ef02b2853dc9f2aeb5de52f1cee1d62",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719151035202,
+          "stop" : 1719151045158,
+          "duration" : 9956
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "6e4bdd3729eab325",
+        "parentUid" : "3ef02b2853dc9f2aeb5de52f1cee1d62",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719151065868,
+          "stop" : 1719151075394,
+          "duration" : 9526
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "51400fa8635fb0b6",
+        "parentUid" : "3ef02b2853dc9f2aeb5de52f1cee1d62",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719151051520,
+          "stop" : 1719151061897,
+          "duration" : 10377
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "3ac0f995521bcac3",
+        "parentUid" : "3ef02b2853dc9f2aeb5de52f1cee1d62",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719151100213,
+          "stop" : 1719151111108,
+          "duration" : 10895
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "1fd0b66ba255041f",
+        "parentUid" : "3ef02b2853dc9f2aeb5de52f1cee1d62",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719151083441,
+          "stop" : 1719151092229,
+          "duration" : 8788
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "51bacef354a3063a",
+        "parentUid" : "3ef02b2853dc9f2aeb5de52f1cee1d62",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719405189824,
+          "stop" : 1719405199010,
+          "duration" : 9186
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "9d0030e158ca1685",
+        "parentUid" : "3ef02b2853dc9f2aeb5de52f1cee1d62",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719405175713,
+          "stop" : 1719405186138,
+          "duration" : 10425
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3ef02b2853dc9f2aeb5de52f1cee1d62"
+    }, {
+      "name" : "13000-MainThread",
+      "children" : [ {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "33d5273806a12314",
+        "parentUid" : "a9901eefa855c5ec318d73a42cf0b592",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719403670761,
+          "stop" : 1719403681425,
+          "duration" : 10664
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "cb5803f030b1242a",
+        "parentUid" : "a9901eefa855c5ec318d73a42cf0b592",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719403654374,
+          "stop" : 1719403663301,
+          "duration" : 8927
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "fa3b654091f71906",
+        "parentUid" : "a9901eefa855c5ec318d73a42cf0b592",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719403637541,
+          "stop" : 1719403646856,
+          "duration" : 9315
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "3eb2000a8467d002",
+        "parentUid" : "a9901eefa855c5ec318d73a42cf0b592",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719403623561,
+          "stop" : 1719403634070,
+          "duration" : 10509
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "3cbf04b9f4863806",
+        "parentUid" : "a9901eefa855c5ec318d73a42cf0b592",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719403605406,
+          "stop" : 1719403617327,
+          "duration" : 11921
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a9901eefa855c5ec318d73a42cf0b592"
+    }, {
+      "name" : "2100-MainThread",
+      "children" : [ {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "7a69247b8e4691bf",
+        "parentUid" : "cd6a37e1d385beef7d4eef78b8a042a2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719406600914,
+          "stop" : 1719406600914,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "1db3db618b66ba30",
+        "parentUid" : "cd6a37e1d385beef7d4eef78b8a042a2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719406600820,
+          "stop" : 1719406600820,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "68fbc4ce8854ebee",
+        "parentUid" : "cd6a37e1d385beef7d4eef78b8a042a2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719406601023,
+          "stop" : 1719406601023,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "cba372d13b528863",
+        "parentUid" : "cd6a37e1d385beef7d4eef78b8a042a2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719406600726,
+          "stop" : 1719406600726,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "927093de8d80d2c",
+        "parentUid" : "cd6a37e1d385beef7d4eef78b8a042a2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719406600434,
+          "stop" : 1719406600434,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cd6a37e1d385beef7d4eef78b8a042a2"
+    }, {
+      "name" : "11664-MainThread",
+      "children" : [ {
+        "name" : "test_auth_positive",
+        "uid" : "f8dc50ba6cbb06a8",
+        "parentUid" : "6487d84616bfc939fa6f9de8e887cc0f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719416085903,
+          "stop" : 1719416097584,
+          "duration" : 11681
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "c8c6a47e1f91fe04",
+        "parentUid" : "6487d84616bfc939fa6f9de8e887cc0f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719416152836,
+          "stop" : 1719416163463,
+          "duration" : 10627
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "d7650da80844c6af",
+        "parentUid" : "6487d84616bfc939fa6f9de8e887cc0f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719416136760,
+          "stop" : 1719416145404,
+          "duration" : 8644
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "73ab787744346e11",
+        "parentUid" : "6487d84616bfc939fa6f9de8e887cc0f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719416120392,
+          "stop" : 1719416129374,
+          "duration" : 8982
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "457a7e5b2205cb81",
+        "parentUid" : "6487d84616bfc939fa6f9de8e887cc0f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719416103884,
+          "stop" : 1719416115789,
+          "duration" : 11905
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6487d84616bfc939fa6f9de8e887cc0f"
+    }, {
+      "name" : "2760-MainThread",
+      "children" : [ {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "8f5ac2722aeddb04",
+        "parentUid" : "37d05dee8c8c6e8a894f65155db48bc8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719150092154,
+          "stop" : 1719150101490,
+          "duration" : 9336
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "bf8d3feda520e90c",
+        "parentUid" : "37d05dee8c8c6e8a894f65155db48bc8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719150077622,
+          "stop" : 1719150087950,
+          "duration" : 10328
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "acbcc7dcda11ad41",
+        "parentUid" : "37d05dee8c8c6e8a894f65155db48bc8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719150061755,
+          "stop" : 1719150071132,
+          "duration" : 9377
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "63a7aeef1d794bfe",
+        "parentUid" : "37d05dee8c8c6e8a894f65155db48bc8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719150109763,
+          "stop" : 1719150118679,
+          "duration" : 8916
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "44fe7a98396791a9",
+        "parentUid" : "37d05dee8c8c6e8a894f65155db48bc8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719150126768,
+          "stop" : 1719150135625,
+          "duration" : 8857
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "37d05dee8c8c6e8a894f65155db48bc8"
+    }, {
+      "name" : "13664-MainThread",
+      "children" : [ {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "aa5f361728ec2359",
+        "parentUid" : "ad3e4f35a5e7c2fba0b6e6366c6cf74d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719012558769,
+          "stop" : 1719012567931,
+          "duration" : 9162
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "fe5f2863eb046ac2",
+        "parentUid" : "ad3e4f35a5e7c2fba0b6e6366c6cf74d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719012488817,
+          "stop" : 1719012498222,
+          "duration" : 9405
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "144758730f9169dd",
+        "parentUid" : "ad3e4f35a5e7c2fba0b6e6366c6cf74d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719012541634,
+          "stop" : 1719012550467,
+          "duration" : 8833
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "9ddd467e59bdbce1",
+        "parentUid" : "ad3e4f35a5e7c2fba0b6e6366c6cf74d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719012523784,
+          "stop" : 1719012533111,
+          "duration" : 9327
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "8ce73daa2ab9209b",
+        "parentUid" : "ad3e4f35a5e7c2fba0b6e6366c6cf74d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1719012508781,
+          "stop" : 1719012519251,
+          "duration" : 10470
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ad3e4f35a5e7c2fba0b6e6366c6cf74d"
+    }, {
+      "name" : "10176-MainThread",
+      "children" : [ {
+        "name" : "Test Authentication",
+        "uid" : "7b388548a73622f",
+        "parentUid" : "f79f1fc4948d0704d302d23a0926d353",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719012739838,
+          "stop" : 1719012748574,
+          "duration" : 8736
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "b197835140d9c740",
+        "parentUid" : "f79f1fc4948d0704d302d23a0926d353",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719012774544,
+          "stop" : 1719012783366,
+          "duration" : 8822
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "c51f92bca10450e",
+        "parentUid" : "f79f1fc4948d0704d302d23a0926d353",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719012756844,
+          "stop" : 1719012766308,
+          "duration" : 9464
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "71078688427eb9da",
+        "parentUid" : "f79f1fc4948d0704d302d23a0926d353",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719012716521,
+          "stop" : 1719012728914,
+          "duration" : 12393
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "658f0dff0b3e79e6",
+        "parentUid" : "f79f1fc4948d0704d302d23a0926d353",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719012791608,
+          "stop" : 1719012800429,
+          "duration" : 8821
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f79f1fc4948d0704d302d23a0926d353"
+    }, {
+      "name" : "5644-MainThread",
+      "children" : [ {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "4441773f663d1be",
+        "parentUid" : "e53bc6699a31113580000cc436370efb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719044476110,
+          "stop" : 1719044485010,
+          "duration" : 8900
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "b4cf96765c7df3a9",
+        "parentUid" : "e53bc6699a31113580000cc436370efb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719044441407,
+          "stop" : 1719044450074,
+          "duration" : 8667
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "367b4496952c687b",
+        "parentUid" : "e53bc6699a31113580000cc436370efb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719044421651,
+          "stop" : 1719044431302,
+          "duration" : 9651
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "54f0fef09b6b4364",
+        "parentUid" : "e53bc6699a31113580000cc436370efb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719044458172,
+          "stop" : 1719044467855,
+          "duration" : 9683
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "843a39a2f47aef5",
+        "parentUid" : "e53bc6699a31113580000cc436370efb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719044493151,
+          "stop" : 1719044501910,
+          "duration" : 8759
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e53bc6699a31113580000cc436370efb"
+    }, {
+      "name" : "10452-MainThread",
+      "children" : [ {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "3f0f5118ffe4253f",
+        "parentUid" : "35e4c705de979a743d895ffe5cc13967",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719150863685,
+          "stop" : 1719150873589,
+          "duration" : 9904
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "4c2784d1c51abe00",
+        "parentUid" : "35e4c705de979a743d895ffe5cc13967",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719150830693,
+          "stop" : 1719150842017,
+          "duration" : 11324
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "135216720c50f037",
+        "parentUid" : "35e4c705de979a743d895ffe5cc13967",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719150846082,
+          "stop" : 1719150855523,
+          "duration" : 9441
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "48da962afc08a9ee",
+        "parentUid" : "35e4c705de979a743d895ffe5cc13967",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719150814497,
+          "stop" : 1719150824136,
+          "duration" : 9639
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "88d43403956b1eaa",
+        "parentUid" : "35e4c705de979a743d895ffe5cc13967",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719150882164,
+          "stop" : 1719150893216,
+          "duration" : 11052
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "35e4c705de979a743d895ffe5cc13967"
+    }, {
+      "name" : "11308-MainThread",
+      "children" : [ {
+        "name" : "test_auth_positive",
+        "uid" : "7e581adda6a68337",
+        "parentUid" : "b5fec6a1c5e31fcdbd6945f65d5dfb96",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719845668962,
+          "stop" : 1719845677944,
+          "duration" : 8982
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "b6dbc5de0ea923f6",
+        "parentUid" : "b5fec6a1c5e31fcdbd6945f65d5dfb96",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719845697846,
+          "stop" : 1719845707003,
+          "duration" : 9157
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "6bce33d83d109481",
+        "parentUid" : "b5fec6a1c5e31fcdbd6945f65d5dfb96",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719845684246,
+          "stop" : 1719845694196,
+          "duration" : 9950
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "b8a05c7cffe0294",
+        "parentUid" : "b5fec6a1c5e31fcdbd6945f65d5dfb96",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719845714588,
+          "stop" : 1719845723305,
+          "duration" : 8717
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "b749645921e07d96",
+        "parentUid" : "b5fec6a1c5e31fcdbd6945f65d5dfb96",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719845730705,
+          "stop" : 1719845741341,
+          "duration" : 10636
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b5fec6a1c5e31fcdbd6945f65d5dfb96"
+    }, {
+      "name" : "13704-MainThread",
+      "children" : [ {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "a814a2b9efea4866",
+        "parentUid" : "e992dfbd11e60c8b9c7c14d8386bd269",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719329622721,
+          "stop" : 1719329631302,
+          "duration" : 8581
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "48e1e081fac03bc8",
+        "parentUid" : "e992dfbd11e60c8b9c7c14d8386bd269",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719329592413,
+          "stop" : 1719329602749,
+          "duration" : 10336
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "b3a1afd4df6aef3e",
+        "parentUid" : "e992dfbd11e60c8b9c7c14d8386bd269",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719329606289,
+          "stop" : 1719329615232,
+          "duration" : 8943
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "aafe7e63718ae892",
+        "parentUid" : "e992dfbd11e60c8b9c7c14d8386bd269",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719329638844,
+          "stop" : 1719329649471,
+          "duration" : 10627
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "187ca889b76a9963",
+        "parentUid" : "e992dfbd11e60c8b9c7c14d8386bd269",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719329576939,
+          "stop" : 1719329586086,
+          "duration" : 9147
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e992dfbd11e60c8b9c7c14d8386bd269"
+    }, {
+      "name" : "11640-MainThread",
+      "children" : [ {
+        "name" : "Test Authentication",
+        "uid" : "2fc8f7e749565ed6",
+        "parentUid" : "db64f6dcd580221e3782291420f94c3c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719328898462,
+          "stop" : 1719328908820,
+          "duration" : 10358
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "c4543a99a422ffb7",
+        "parentUid" : "db64f6dcd580221e3782291420f94c3c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719328912483,
+          "stop" : 1719328921348,
+          "duration" : 8865
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "a942f0ffcec8e108",
+        "parentUid" : "db64f6dcd580221e3782291420f94c3c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719328929017,
+          "stop" : 1719328937684,
+          "duration" : 8667
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "8fe0070bab5b78f7",
+        "parentUid" : "db64f6dcd580221e3782291420f94c3c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719328879551,
+          "stop" : 1719328891115,
+          "duration" : 11564
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "4d3a9032c298052f",
+        "parentUid" : "db64f6dcd580221e3782291420f94c3c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719328945372,
+          "stop" : 1719328955989,
+          "duration" : 10617
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "db64f6dcd580221e3782291420f94c3c"
+    }, {
+      "name" : "10700-MainThread",
+      "children" : [ {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "53584469dea27a49",
+        "parentUid" : "3933df576a09d447d9731219946d2591",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719330016528,
+          "stop" : 1719330016528,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "794f74208b21c227",
+        "parentUid" : "3933df576a09d447d9731219946d2591",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719330016468,
+          "stop" : 1719330016468,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "2e84c0c07e9b8030",
+        "parentUid" : "3933df576a09d447d9731219946d2591",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719330016419,
+          "stop" : 1719330016419,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "f642c0f3a148fb98",
+        "parentUid" : "3933df576a09d447d9731219946d2591",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719330002552,
+          "stop" : 1719330002552,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "a6e0987a4c695eb5",
+        "parentUid" : "3933df576a09d447d9731219946d2591",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719330003049,
+          "stop" : 1719330013985,
+          "duration" : 10936
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3933df576a09d447d9731219946d2591"
+    }, {
+      "name" : "9228-MainThread",
+      "children" : [ {
+        "name" : "Test Authentication",
+        "uid" : "dd6220019bd5865e",
+        "parentUid" : "29e4d0906f42b9f70186b0795e842201",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719855645255,
+          "stop" : 1719855655462,
+          "duration" : 10207
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "d05046bb4ac640e",
+        "parentUid" : "29e4d0906f42b9f70186b0795e842201",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719855626985,
+          "stop" : 1719855638970,
+          "duration" : 11985
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "d4869a0396628feb",
+        "parentUid" : "29e4d0906f42b9f70186b0795e842201",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719855658834,
+          "stop" : 1719855667895,
+          "duration" : 9061
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "4d66e2ec61adeb54",
+        "parentUid" : "29e4d0906f42b9f70186b0795e842201",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719855678534,
+          "stop" : 1719855687480,
+          "duration" : 8946
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "6df5c36ed04aa072",
+        "parentUid" : "29e4d0906f42b9f70186b0795e842201",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719855695093,
+          "stop" : 1719855705775,
+          "duration" : 10682
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "29e4d0906f42b9f70186b0795e842201"
+    }, {
+      "name" : "1860-MainThread",
+      "children" : [ {
+        "name" : "Test Authentication",
+        "uid" : "b0a1b8a3b235a492",
+        "parentUid" : "df8904c7d0ad2e50ff57e9ebd3216d9c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719319547096,
+          "stop" : 1719319559132,
+          "duration" : 12036
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "cef567773133d1d2",
+        "parentUid" : "df8904c7d0ad2e50ff57e9ebd3216d9c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719319581677,
+          "stop" : 1719319590361,
+          "duration" : 8684
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "dc7a1519968251a",
+        "parentUid" : "df8904c7d0ad2e50ff57e9ebd3216d9c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719319564216,
+          "stop" : 1719319573602,
+          "duration" : 9386
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "2e0ea6445101ded6",
+        "parentUid" : "df8904c7d0ad2e50ff57e9ebd3216d9c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719319598589,
+          "stop" : 1719319609753,
+          "duration" : 11164
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "94def3ee86fa0558",
+        "parentUid" : "df8904c7d0ad2e50ff57e9ebd3216d9c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719319531062,
+          "stop" : 1719319540680,
+          "duration" : 9618
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "df8904c7d0ad2e50ff57e9ebd3216d9c"
+    }, {
+      "name" : "4408-MainThread",
+      "children" : [ {
+        "name" : "Test Authentication",
+        "uid" : "4a0f65553b271621",
+        "parentUid" : "9993330b89e0cb747049af16ded3f113",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719331476349,
+          "stop" : 1719331486826,
+          "duration" : 10477
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "e1e702faa5e00cda",
+        "parentUid" : "9993330b89e0cb747049af16ded3f113",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719331507806,
+          "stop" : 1719331516379,
+          "duration" : 8573
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "ad256251a5d78b22",
+        "parentUid" : "9993330b89e0cb747049af16ded3f113",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719331491138,
+          "stop" : 1719331500297,
+          "duration" : 9159
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "3d3299a0676e16e0",
+        "parentUid" : "9993330b89e0cb747049af16ded3f113",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719331524076,
+          "stop" : 1719331534692,
+          "duration" : 10616
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "929f069fe0694d2a",
+        "parentUid" : "9993330b89e0cb747049af16ded3f113",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719331460966,
+          "stop" : 1719331470041,
+          "duration" : 9075
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9993330b89e0cb747049af16ded3f113"
+    }, {
+      "name" : "9592-MainThread",
+      "children" : [ {
+        "name" : "test_auth_positive",
+        "uid" : "b7f0feb38469d3f4",
+        "parentUid" : "03528f45a8676d768cedc107287ec48a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1720286921459,
+          "stop" : 1720286933510,
+          "duration" : 12051
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "366bea82fe045397",
+        "parentUid" : "03528f45a8676d768cedc107287ec48a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1720286986295,
+          "stop" : 1720286996921,
+          "duration" : 10626
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "671dea27eee7dbef",
+        "parentUid" : "03528f45a8676d768cedc107287ec48a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1720286953098,
+          "stop" : 1720286962350,
+          "duration" : 9252
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "f5e7de44ab789be7",
+        "parentUid" : "03528f45a8676d768cedc107287ec48a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1720286939755,
+          "stop" : 1720286949737,
+          "duration" : 9982
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "da38b71f8bc0c3fd",
+        "parentUid" : "03528f45a8676d768cedc107287ec48a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1720286969898,
+          "stop" : 1720286978847,
+          "duration" : 8949
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "03528f45a8676d768cedc107287ec48a"
+    }, {
+      "name" : "12764-MainThread",
+      "children" : [ {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "45c9b1f61e8891b2",
+        "parentUid" : "4307e6c1864cd9279cd1c3b2806112f3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719416618216,
+          "stop" : 1719416629303,
+          "duration" : 11087
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "c418e461a2f3ad93",
+        "parentUid" : "4307e6c1864cd9279cd1c3b2806112f3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719416589252,
+          "stop" : 1719416598334,
+          "duration" : 9082
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "8e594f3193a22d9f",
+        "parentUid" : "4307e6c1864cd9279cd1c3b2806112f3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719416604687,
+          "stop" : 1719416614685,
+          "duration" : 9998
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "623fa9a14b34778d",
+        "parentUid" : "4307e6c1864cd9279cd1c3b2806112f3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719416653256,
+          "stop" : 1719416663918,
+          "duration" : 10662
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "68c29022e58b2089",
+        "parentUid" : "4307e6c1864cd9279cd1c3b2806112f3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719416637199,
+          "stop" : 1719416645868,
+          "duration" : 8669
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4307e6c1864cd9279cd1c3b2806112f3"
+    }, {
+      "name" : "5768-MainThread",
+      "children" : [ {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "266c5735fd730265",
+        "parentUid" : "3d4251e7f1d7f34849c041057ef34bd5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719320807919,
+          "stop" : 1719320816613,
+          "duration" : 8694
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "346e2cf8e21f8189",
+        "parentUid" : "3d4251e7f1d7f34849c041057ef34bd5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719320775054,
+          "stop" : 1719320785535,
+          "duration" : 10481
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "65460bba9f224e1",
+        "parentUid" : "3d4251e7f1d7f34849c041057ef34bd5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719320789819,
+          "stop" : 1719320799651,
+          "duration" : 9832
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "8ff8002aad9a2b92",
+        "parentUid" : "3d4251e7f1d7f34849c041057ef34bd5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719320824730,
+          "stop" : 1719320835625,
+          "duration" : 10895
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "5220d5eff8545c3a",
+        "parentUid" : "3d4251e7f1d7f34849c041057ef34bd5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719320758460,
+          "stop" : 1719320768393,
+          "duration" : 9933
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3d4251e7f1d7f34849c041057ef34bd5"
+    }, {
+      "name" : "3736-MainThread",
+      "children" : [ {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "7becdf9c72c378d6",
+        "parentUid" : "d820a5c7d545c2b19a647e4c9e01982c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719150717804,
+          "stop" : 1719150726725,
+          "duration" : 8921
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "60466accbe3cfd52",
+        "parentUid" : "d820a5c7d545c2b19a647e4c9e01982c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719150684754,
+          "stop" : 1719150695156,
+          "duration" : 10402
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "756cf4f02ed1a5b5",
+        "parentUid" : "d820a5c7d545c2b19a647e4c9e01982c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719150699381,
+          "stop" : 1719150709274,
+          "duration" : 9893
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "6b8c2734ca8d0957",
+        "parentUid" : "d820a5c7d545c2b19a647e4c9e01982c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719150668664,
+          "stop" : 1719150678193,
+          "duration" : 9529
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "596f6ac469ab54f5",
+        "parentUid" : "d820a5c7d545c2b19a647e4c9e01982c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719150734775,
+          "stop" : 1719150745581,
+          "duration" : 10806
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d820a5c7d545c2b19a647e4c9e01982c"
+    }, {
+      "name" : "5360-MainThread",
+      "children" : [ {
+        "name" : "test_auth_positive",
+        "uid" : "efc5319d34b8eeb6",
+        "parentUid" : "d60e858758567e64c97dc0ffebb2444e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719329065759,
+          "stop" : 1719329065759,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "4c6c49a7cd943a8c",
+        "parentUid" : "d60e858758567e64c97dc0ffebb2444e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719329066267,
+          "stop" : 1719329066267,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "f352a11a024d030d",
+        "parentUid" : "d60e858758567e64c97dc0ffebb2444e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719329066398,
+          "stop" : 1719329066398,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "38baeb8922148425",
+        "parentUid" : "d60e858758567e64c97dc0ffebb2444e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719329066137,
+          "stop" : 1719329066137,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "ca710e5113b9b9ca",
+        "parentUid" : "d60e858758567e64c97dc0ffebb2444e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719329066597,
+          "stop" : 1719329066597,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d60e858758567e64c97dc0ffebb2444e"
+    }, {
+      "name" : "14128-MainThread",
+      "children" : [ {
+        "name" : "Test Authentication",
+        "uid" : "a0e59d50d0402746",
+        "parentUid" : "96874a08aae93eecb9053ebb5ae3412a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719409829921,
+          "stop" : 1719409840556,
+          "duration" : 10635
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "414e1ac28b2eb44b",
+        "parentUid" : "96874a08aae93eecb9053ebb5ae3412a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719409844116,
+          "stop" : 1719409853441,
+          "duration" : 9325
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "3f18d2a0401f6e1",
+        "parentUid" : "96874a08aae93eecb9053ebb5ae3412a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719409860856,
+          "stop" : 1719409869525,
+          "duration" : 8669
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "2f30297c7906be54",
+        "parentUid" : "96874a08aae93eecb9053ebb5ae3412a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719409811710,
+          "stop" : 1719409823643,
+          "duration" : 11933
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "920accd9a082e996",
+        "parentUid" : "96874a08aae93eecb9053ebb5ae3412a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719409876959,
+          "stop" : 1719409887664,
+          "duration" : 10705
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "96874a08aae93eecb9053ebb5ae3412a"
+    }, {
+      "name" : "14524-MainThread",
+      "children" : [ {
+        "name" : "test_auth_positive",
+        "uid" : "b8df8edbeeca07e1",
+        "parentUid" : "4172daf863797305ba0edb037323993e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719845436781,
+          "stop" : 1719845448469,
+          "duration" : 11688
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "6a502a50e74f0d01",
+        "parentUid" : "4172daf863797305ba0edb037323993e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719845454809,
+          "stop" : 1719845464570,
+          "duration" : 9761
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "93f2e6114fef75e0",
+        "parentUid" : "4172daf863797305ba0edb037323993e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719845500711,
+          "stop" : 1719845511340,
+          "duration" : 10629
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "5f362c4944338a91",
+        "parentUid" : "4172daf863797305ba0edb037323993e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719845484427,
+          "stop" : 1719845493258,
+          "duration" : 8831
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "839f8c9b922e90c1",
+        "parentUid" : "4172daf863797305ba0edb037323993e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719845468030,
+          "stop" : 1719845476972,
+          "duration" : 8942
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4172daf863797305ba0edb037323993e"
+    }, {
+      "name" : "12560-MainThread",
+      "children" : [ {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "ac076d35eb1ae552",
+        "parentUid" : "058af54e49bb71fb5ede2a56d535cdfa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1718734561493,
+          "stop" : 1718734570368,
+          "duration" : 8875
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "34ce1a9b72b07d8e",
+        "parentUid" : "058af54e49bb71fb5ede2a56d535cdfa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1718734544004,
+          "stop" : 1718734552872,
+          "duration" : 8868
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "d228cc39dd6671ad",
+        "parentUid" : "058af54e49bb71fb5ede2a56d535cdfa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1718734515271,
+          "stop" : 1718734523953,
+          "duration" : 8682
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "5c5bb523dc3ea1f6",
+        "parentUid" : "058af54e49bb71fb5ede2a56d535cdfa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1718734497127,
+          "stop" : 1718734506491,
+          "duration" : 9364
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "2c723777fff6e88d",
+        "parentUid" : "058af54e49bb71fb5ede2a56d535cdfa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1718734526302,
+          "stop" : 1718734535490,
+          "duration" : 9188
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "058af54e49bb71fb5ede2a56d535cdfa"
+    }, {
+      "name" : "4224-MainThread",
+      "children" : [ {
+        "name" : "test_auth_positive",
+        "uid" : "3643c010bfe1e01a",
+        "parentUid" : "7e83db5db4e36b24a58385c76d59406b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719407322832,
+          "stop" : 1719407322832,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "423fc5288a7885f",
+        "parentUid" : "7e83db5db4e36b24a58385c76d59406b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719407323432,
+          "stop" : 1719407323432,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "45870d0b3e55a62e",
+        "parentUid" : "7e83db5db4e36b24a58385c76d59406b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719407323320,
+          "stop" : 1719407323320,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "442f1e7d80a0bdf6",
+        "parentUid" : "7e83db5db4e36b24a58385c76d59406b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719407323134,
+          "stop" : 1719407323134,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "5afc8935a1495cdf",
+        "parentUid" : "7e83db5db4e36b24a58385c76d59406b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719407323230,
+          "stop" : 1719407323230,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7e83db5db4e36b24a58385c76d59406b"
+    }, {
+      "name" : "4100-MainThread",
+      "children" : [ {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "ca9701badd80869f",
+        "parentUid" : "3e93fa9da6a68b73ab41f4846e3bf392",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719320579837,
+          "stop" : 1719320588977,
+          "duration" : 9140
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "1b751c0d09fbc468",
+        "parentUid" : "3e93fa9da6a68b73ab41f4846e3bf392",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719320597627,
+          "stop" : 1719320608818,
+          "duration" : 11191
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "44635a9dce2ac8db",
+        "parentUid" : "3e93fa9da6a68b73ab41f4846e3bf392",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719320544976,
+          "stop" : 1719320556078,
+          "duration" : 11102
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "2b3b306a482e801a",
+        "parentUid" : "3e93fa9da6a68b73ab41f4846e3bf392",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719320560838,
+          "stop" : 1719320570261,
+          "duration" : 9423
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "41947efc5c356f8b",
+        "parentUid" : "3e93fa9da6a68b73ab41f4846e3bf392",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719320527426,
+          "stop" : 1719320538252,
+          "duration" : 10826
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3e93fa9da6a68b73ab41f4846e3bf392"
+    }, {
+      "name" : "14536-MainThread",
+      "children" : [ {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "545fb5b02272286b",
+        "parentUid" : "7fcd63ff038d861c2f6794271f8b9e37",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719405039944,
+          "stop" : 1719405050626,
+          "duration" : 10682
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "d590d000934428e5",
+        "parentUid" : "7fcd63ff038d861c2f6794271f8b9e37",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719404993170,
+          "stop" : 1719405003855,
+          "duration" : 10685
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "36c95bd1df01bf39",
+        "parentUid" : "7fcd63ff038d861c2f6794271f8b9e37",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719404975161,
+          "stop" : 1719404986870,
+          "duration" : 11709
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "38cafd330a4805f9",
+        "parentUid" : "7fcd63ff038d861c2f6794271f8b9e37",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719405023959,
+          "stop" : 1719405032586,
+          "duration" : 8627
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "ed3a836c3849352a",
+        "parentUid" : "7fcd63ff038d861c2f6794271f8b9e37",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719405007383,
+          "stop" : 1719405016626,
+          "duration" : 9243
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7fcd63ff038d861c2f6794271f8b9e37"
+    }, {
+      "name" : "10172-MainThread",
+      "children" : [ {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "1215bcfa2ef024c1",
+        "parentUid" : "72298c7b29435ee98ae196b58e07fed9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719043867558,
+          "stop" : 1719043867558,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "9ba94fd307e360ca",
+        "parentUid" : "72298c7b29435ee98ae196b58e07fed9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719043867276,
+          "stop" : 1719043867276,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "59565a66c295b8a6",
+        "parentUid" : "72298c7b29435ee98ae196b58e07fed9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719043867535,
+          "stop" : 1719043867535,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "5b7dd57c1f071b12",
+        "parentUid" : "72298c7b29435ee98ae196b58e07fed9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719043867610,
+          "stop" : 1719043867610,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "2693b489925c2ff5",
+        "parentUid" : "72298c7b29435ee98ae196b58e07fed9",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719043867581,
+          "stop" : 1719043867581,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "72298c7b29435ee98ae196b58e07fed9"
+    }, {
+      "name" : "14840-MainThread",
+      "children" : [ {
+        "name" : "test_auth_positive",
+        "uid" : "39d451a656b378f5",
+        "parentUid" : "7a1e6d80103071d698c8e5d663e7aadc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719413081865,
+          "stop" : 1719413093689,
+          "duration" : 11824
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "4db8683a5e210d4f",
+        "parentUid" : "7a1e6d80103071d698c8e5d663e7aadc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719413099998,
+          "stop" : 1719413110375,
+          "duration" : 10377
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "46ef4416acfdc078",
+        "parentUid" : "7a1e6d80103071d698c8e5d663e7aadc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719413146991,
+          "stop" : 1719413157740,
+          "duration" : 10749
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "cf7c527461acc5c4",
+        "parentUid" : "7a1e6d80103071d698c8e5d663e7aadc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719413114173,
+          "stop" : 1719413123494,
+          "duration" : 9321
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "c23acd4b63ca0b59",
+        "parentUid" : "7a1e6d80103071d698c8e5d663e7aadc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719413130903,
+          "stop" : 1719413139585,
+          "duration" : 8682
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7a1e6d80103071d698c8e5d663e7aadc"
+    }, {
+      "name" : "13468-MainThread",
+      "children" : [ {
+        "name" : "test_auth_positive",
+        "uid" : "97c04a95ad13f440",
+        "parentUid" : "83e44517ee7185850e88b7dbfdfa3486",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719127857332,
+          "stop" : 1719127867872,
+          "duration" : 10540
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "bfd43b3fe9237d9d",
+        "parentUid" : "83e44517ee7185850e88b7dbfdfa3486",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719127874385,
+          "stop" : 1719127884755,
+          "duration" : 10370
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "b94f615137546264",
+        "parentUid" : "83e44517ee7185850e88b7dbfdfa3486",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719127923631,
+          "stop" : 1719127932610,
+          "duration" : 8979
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "7f08790e65943eb2",
+        "parentUid" : "83e44517ee7185850e88b7dbfdfa3486",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719127888827,
+          "stop" : 1719127898561,
+          "duration" : 9734
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "91b6aedf9a79c922",
+        "parentUid" : "83e44517ee7185850e88b7dbfdfa3486",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719127906598,
+          "stop" : 1719127915436,
+          "duration" : 8838
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "83e44517ee7185850e88b7dbfdfa3486"
+    }, {
+      "name" : "808-MainThread",
+      "children" : [ {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "ed04cfdfafd39be7",
+        "parentUid" : "9d196896170635a14170a13ed4830a3b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719414693625,
+          "stop" : 1719414703000,
+          "duration" : 9375
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "6ef235387c1c38b1",
+        "parentUid" : "9d196896170635a14170a13ed4830a3b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719414640720,
+          "stop" : 1719414652852,
+          "duration" : 12132
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "710b05c84bc0e738",
+        "parentUid" : "9d196896170635a14170a13ed4830a3b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719414675347,
+          "stop" : 1719414685121,
+          "duration" : 9774
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "c53f0526f5e6880f",
+        "parentUid" : "9d196896170635a14170a13ed4830a3b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719414711431,
+          "stop" : 1719414722730,
+          "duration" : 11299
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "c1a373bffcfa35a6",
+        "parentUid" : "9d196896170635a14170a13ed4830a3b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719414659455,
+          "stop" : 1719414670860,
+          "duration" : 11405
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9d196896170635a14170a13ed4830a3b"
+    }, {
+      "name" : "12788-MainThread",
+      "children" : [ {
+        "name" : "test_auth_positive",
+        "uid" : "c105024c6d87cfcd",
+        "parentUid" : "fba24f550b70450d6a9ef42b2da0d338",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719044875183,
+          "stop" : 1719044884747,
+          "duration" : 9564
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "79fa8684473f6d0d",
+        "parentUid" : "fba24f550b70450d6a9ef42b2da0d338",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719044929835,
+          "stop" : 1719044938652,
+          "duration" : 8817
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "f36fb17c1243e696",
+        "parentUid" : "fba24f550b70450d6a9ef42b2da0d338",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719044911963,
+          "stop" : 1719044921624,
+          "duration" : 9661
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "c2fceed7a10684fe",
+        "parentUid" : "fba24f550b70450d6a9ef42b2da0d338",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719044895289,
+          "stop" : 1719044903952,
+          "duration" : 8663
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "edc56248159f7f90",
+        "parentUid" : "fba24f550b70450d6a9ef42b2da0d338",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719044946581,
+          "stop" : 1719044955362,
+          "duration" : 8781
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fba24f550b70450d6a9ef42b2da0d338"
+    }, {
+      "name" : "13740-MainThread",
+      "children" : [ {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "9ef18ca1ba36b02d",
+        "parentUid" : "6da8a0bc9f5bfbf7109b2fab1b574687",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719413718379,
+          "stop" : 1719413729127,
+          "duration" : 10748
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "d272ebd9b24164be",
+        "parentUid" : "6da8a0bc9f5bfbf7109b2fab1b574687",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719413653264,
+          "stop" : 1719413664820,
+          "duration" : 11556
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "a5db50071a680ba2",
+        "parentUid" : "6da8a0bc9f5bfbf7109b2fab1b574687",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719413685327,
+          "stop" : 1719413694763,
+          "duration" : 9436
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "79d369806bdbf14f",
+        "parentUid" : "6da8a0bc9f5bfbf7109b2fab1b574687",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719413702205,
+          "stop" : 1719413710958,
+          "duration" : 8753
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "5330eecbb6c744bd",
+        "parentUid" : "6da8a0bc9f5bfbf7109b2fab1b574687",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719413671061,
+          "stop" : 1719413681630,
+          "duration" : 10569
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6da8a0bc9f5bfbf7109b2fab1b574687"
+    }, {
+      "name" : "3004-MainThread",
+      "children" : [ {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "9d836497fcfe1e89",
+        "parentUid" : "1bedb51e3b922043a6e02c191de28f33",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719484850318,
+          "stop" : 1719484861023,
+          "duration" : 10705
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "e566f1b14ee3d39c",
+        "parentUid" : "1bedb51e3b922043a6e02c191de28f33",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719484816340,
+          "stop" : 1719484826219,
+          "duration" : 9879
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "fcbe3701b4e4eb1a",
+        "parentUid" : "1bedb51e3b922043a6e02c191de28f33",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719484833906,
+          "stop" : 1719484842846,
+          "duration" : 8940
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "4eeaf07583b33f6a",
+        "parentUid" : "1bedb51e3b922043a6e02c191de28f33",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719484802571,
+          "stop" : 1719484812788,
+          "duration" : 10217
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "e4ae9651bcbaf302",
+        "parentUid" : "1bedb51e3b922043a6e02c191de28f33",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719484784629,
+          "stop" : 1719484796181,
+          "duration" : 11552
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1bedb51e3b922043a6e02c191de28f33"
+    }, {
+      "name" : "11092-MainThread",
+      "children" : [ {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "502954b69f5ea429",
+        "parentUid" : "f88552e014f9140c5a41a7d6adc33d18",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719045700157,
+          "stop" : 1719045708914,
+          "duration" : 8757
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "352152d6952da38",
+        "parentUid" : "f88552e014f9140c5a41a7d6adc33d18",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719045629005,
+          "stop" : 1719045638387,
+          "duration" : 9382
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "c070545cc3f99bfc",
+        "parentUid" : "f88552e014f9140c5a41a7d6adc33d18",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719045648632,
+          "stop" : 1719045657379,
+          "duration" : 8747
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "f87e267b17268fb6",
+        "parentUid" : "f88552e014f9140c5a41a7d6adc33d18",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719045683435,
+          "stop" : 1719045692198,
+          "duration" : 8763
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "9031dde271f7efec",
+        "parentUid" : "f88552e014f9140c5a41a7d6adc33d18",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719045665799,
+          "stop" : 1719045675362,
+          "duration" : 9563
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f88552e014f9140c5a41a7d6adc33d18"
+    }, {
+      "name" : "9860-MainThread",
+      "children" : [ {
+        "name" : "Test Authentication",
+        "uid" : "6a71e0709171ec77",
+        "parentUid" : "e2a8e01db592fe0d3e240c7260c6da77",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719330068996,
+          "stop" : 1719330079469,
+          "duration" : 10473
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "e0ae87938c987025",
+        "parentUid" : "e2a8e01db592fe0d3e240c7260c6da77",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719330051524,
+          "stop" : 1719330062676,
+          "duration" : 11152
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "89b6667da5a99c01",
+        "parentUid" : "e2a8e01db592fe0d3e240c7260c6da77",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719330099370,
+          "stop" : 1719330107998,
+          "duration" : 8628
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "3a2577db60de54a9",
+        "parentUid" : "e2a8e01db592fe0d3e240c7260c6da77",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719330115525,
+          "stop" : 1719330126144,
+          "duration" : 10619
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "6397f6fa8226f493",
+        "parentUid" : "e2a8e01db592fe0d3e240c7260c6da77",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719330083089,
+          "stop" : 1719330091943,
+          "duration" : 8854
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e2a8e01db592fe0d3e240c7260c6da77"
+    }, {
+      "name" : "3748-MainThread",
+      "children" : [ {
+        "name" : "Test Authentication",
+        "uid" : "994f98f838fb307d",
+        "parentUid" : "8ef9bf7ff7f85d770bab5cbee0794f85",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719331089942,
+          "stop" : 1719331100226,
+          "duration" : 10284
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "77c6a1db9bc03f33",
+        "parentUid" : "8ef9bf7ff7f85d770bab5cbee0794f85",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719331073527,
+          "stop" : 1719331082601,
+          "duration" : 9074
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "c6b677d807476131",
+        "parentUid" : "8ef9bf7ff7f85d770bab5cbee0794f85",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719331103905,
+          "stop" : 1719331112830,
+          "duration" : 8925
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "535c53afc3018541",
+        "parentUid" : "8ef9bf7ff7f85d770bab5cbee0794f85",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719331120339,
+          "stop" : 1719331128981,
+          "duration" : 8642
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "ce22b228b2da5aad",
+        "parentUid" : "8ef9bf7ff7f85d770bab5cbee0794f85",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719331136454,
+          "stop" : 1719331147074,
+          "duration" : 10620
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8ef9bf7ff7f85d770bab5cbee0794f85"
+    }, {
+      "name" : "10384-MainThread",
+      "children" : [ {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "697c5214ac72a224",
+        "parentUid" : "332e9524f4f6a515c1f8ad59e5f96ae5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719412314739,
+          "stop" : 1719412323457,
+          "duration" : 8718
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "29f6505d28062819",
+        "parentUid" : "332e9524f4f6a515c1f8ad59e5f96ae5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719412297867,
+          "stop" : 1719412307310,
+          "duration" : 9443
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "776f78ba9ea3531b",
+        "parentUid" : "332e9524f4f6a515c1f8ad59e5f96ae5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719412265193,
+          "stop" : 1719412277146,
+          "duration" : 11953
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "88ff1252b512c90a",
+        "parentUid" : "332e9524f4f6a515c1f8ad59e5f96ae5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719412330907,
+          "stop" : 1719412341601,
+          "duration" : 10694
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "801485b4fa1233e1",
+        "parentUid" : "332e9524f4f6a515c1f8ad59e5f96ae5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719412283489,
+          "stop" : 1719412294001,
+          "duration" : 10512
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "332e9524f4f6a515c1f8ad59e5f96ae5"
+    }, {
+      "name" : "12604-MainThread",
+      "children" : [ {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "524ccf17ce9cf511",
+        "parentUid" : "281b5fb5ed254c517605d7eb10bae4db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719330756018,
+          "stop" : 1719330764594,
+          "duration" : 8576
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "8b64bf2f92f07010",
+        "parentUid" : "281b5fb5ed254c517605d7eb10bae4db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719330772249,
+          "stop" : 1719330782877,
+          "duration" : 10628
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "fa84c3dc9df83cb7",
+        "parentUid" : "281b5fb5ed254c517605d7eb10bae4db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719330719217,
+          "stop" : 1719330730603,
+          "duration" : 11386
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "3c5db0076133548c",
+        "parentUid" : "281b5fb5ed254c517605d7eb10bae4db",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719330739604,
+          "stop" : 1719330748501,
+          "duration" : 8897
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "d1ab124c70af290b",
+        "parentUid" : "281b5fb5ed254c517605d7eb10bae4db",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719330737902,
+          "stop" : 1719330737940,
+          "duration" : 38
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "281b5fb5ed254c517605d7eb10bae4db"
+    }, {
+      "name" : "6288-MainThread",
+      "children" : [ {
+        "name" : "Test Authentication",
+        "uid" : "a948052796338503",
+        "parentUid" : "f661be31dda243f2c68ac65c88261c3b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719128751637,
+          "stop" : 1719128762000,
+          "duration" : 10363
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "bb61dd68b95dc74f",
+        "parentUid" : "f661be31dda243f2c68ac65c88261c3b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719128766175,
+          "stop" : 1719128775695,
+          "duration" : 9520
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "630482f88620ebc",
+        "parentUid" : "f661be31dda243f2c68ac65c88261c3b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719128784010,
+          "stop" : 1719128792773,
+          "duration" : 8763
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "75cb770fbc6f5719",
+        "parentUid" : "f661be31dda243f2c68ac65c88261c3b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719128735346,
+          "stop" : 1719128745079,
+          "duration" : 9733
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "57ca87e023ee852b",
+        "parentUid" : "f661be31dda243f2c68ac65c88261c3b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719128801097,
+          "stop" : 1719128810006,
+          "duration" : 8909
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f661be31dda243f2c68ac65c88261c3b"
+    }, {
+      "name" : "13820-MainThread",
+      "children" : [ {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "b4234fa8f3c70bf2",
+        "parentUid" : "84e28a5824fafa8b1defc3340a1cd7d2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719325917800,
+          "stop" : 1719325928508,
+          "duration" : 10708
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "46046221317c47b7",
+        "parentUid" : "84e28a5824fafa8b1defc3340a1cd7d2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719325851920,
+          "stop" : 1719325861503,
+          "duration" : 9583
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "2fe7c1d302020aa7",
+        "parentUid" : "84e28a5824fafa8b1defc3340a1cd7d2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719325883791,
+          "stop" : 1719325892813,
+          "duration" : 9022
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "fb32c877660137c0",
+        "parentUid" : "84e28a5824fafa8b1defc3340a1cd7d2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719325900888,
+          "stop" : 1719325909475,
+          "duration" : 8587
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "3070a2a5fbf8e128",
+        "parentUid" : "84e28a5824fafa8b1defc3340a1cd7d2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719325868376,
+          "stop" : 1719325879761,
+          "duration" : 11385
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "84e28a5824fafa8b1defc3340a1cd7d2"
+    }, {
+      "name" : "3116-MainThread",
+      "children" : [ {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "7c895d25924dd07f",
+        "parentUid" : "0d1ca37e033619bb546ea7ccba77fa7f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719407138732,
+          "stop" : 1719407138732,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "95d4d0c02b9983d5",
+        "parentUid" : "0d1ca37e033619bb546ea7ccba77fa7f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719407138764,
+          "stop" : 1719407138764,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "952733e80432803a",
+        "parentUid" : "0d1ca37e033619bb546ea7ccba77fa7f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719407138485,
+          "stop" : 1719407138485,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "2a0ac23296b110ab",
+        "parentUid" : "0d1ca37e033619bb546ea7ccba77fa7f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719407138747,
+          "stop" : 1719407138747,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "a64d9f959c967e84",
+        "parentUid" : "0d1ca37e033619bb546ea7ccba77fa7f",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719407138713,
+          "stop" : 1719407138713,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0d1ca37e033619bb546ea7ccba77fa7f"
+    }, {
+      "name" : "12368-MainThread",
+      "children" : [ {
+        "name" : "test_auth_positive",
+        "uid" : "d5dd6bff9fe0c3e6",
+        "parentUid" : "a8967d0191d25fc3fe18bacb40c4754b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719127318799,
+          "stop" : 1719127328783,
+          "duration" : 9984
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "24cce02fa210571c",
+        "parentUid" : "a8967d0191d25fc3fe18bacb40c4754b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719127390700,
+          "stop" : 1719127399503,
+          "duration" : 8803
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "80c0b18392d3a4e0",
+        "parentUid" : "a8967d0191d25fc3fe18bacb40c4754b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719127339149,
+          "stop" : 1719127347891,
+          "duration" : 8742
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "5ed30fdfc15ebcf8",
+        "parentUid" : "a8967d0191d25fc3fe18bacb40c4754b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719127355958,
+          "stop" : 1719127365774,
+          "duration" : 9816
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "111ba5d2291fd4ed",
+        "parentUid" : "a8967d0191d25fc3fe18bacb40c4754b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719127373936,
+          "stop" : 1719127382665,
+          "duration" : 8729
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a8967d0191d25fc3fe18bacb40c4754b"
+    }, {
+      "name" : "6536-MainThread",
+      "children" : [ {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "fbdb0217e41ad739",
+        "parentUid" : "6499d86be3b7cfd4ab269a380e3dca70",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719330863639,
+          "stop" : 1719330874259,
+          "duration" : 10620
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "da830de32c7f5f2f",
+        "parentUid" : "6499d86be3b7cfd4ab269a380e3dca70",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719330831095,
+          "stop" : 1719330839960,
+          "duration" : 8865
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "d98525e5ae346510",
+        "parentUid" : "6499d86be3b7cfd4ab269a380e3dca70",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719330847490,
+          "stop" : 1719330856067,
+          "duration" : 8577
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "6bcaca130d0a32da",
+        "parentUid" : "6499d86be3b7cfd4ab269a380e3dca70",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719330829495,
+          "stop" : 1719330829500,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "a4027b8bd5c09942",
+        "parentUid" : "6499d86be3b7cfd4ab269a380e3dca70",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719330813131,
+          "stop" : 1719330822132,
+          "duration" : 9001
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6499d86be3b7cfd4ab269a380e3dca70"
+    }, {
+      "name" : "11796-MainThread",
+      "children" : [ {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "d8810161917fa949",
+        "parentUid" : "c8e778aaf5968412a41b83b01f317eb8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719329225712,
+          "stop" : 1719329234638,
+          "duration" : 8926
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "1866592de81b7d86",
+        "parentUid" : "c8e778aaf5968412a41b83b01f317eb8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719329242085,
+          "stop" : 1719329250717,
+          "duration" : 8632
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "c6a7d3f767b7ecb5",
+        "parentUid" : "c8e778aaf5968412a41b83b01f317eb8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719329211392,
+          "stop" : 1719329221937,
+          "duration" : 10545
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "746d1a6bb6235b75",
+        "parentUid" : "c8e778aaf5968412a41b83b01f317eb8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719329196177,
+          "stop" : 1719329205094,
+          "duration" : 8917
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "3e5d1d08d66a1b44",
+        "parentUid" : "c8e778aaf5968412a41b83b01f317eb8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1719329258216,
+          "stop" : 1719329268843,
+          "duration" : 10627
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c8e778aaf5968412a41b83b01f317eb8"
+    }, {
+      "name" : "6352-MainThread",
+      "children" : [ {
+        "name" : "test_auth_positive",
+        "uid" : "839177de4888ae8b",
+        "parentUid" : "22a8d3cab6e1237c0b0ed375715a7393",
+        "status" : "passed",
+        "time" : {
+          "start" : 1718734844391,
+          "stop" : 1718734853993,
+          "duration" : 9602
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "9a19109c7cc7675d",
+        "parentUid" : "22a8d3cab6e1237c0b0ed375715a7393",
+        "status" : "passed",
+        "time" : {
+          "start" : 1718734881391,
+          "stop" : 1718734891751,
+          "duration" : 10360
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "cace591613a19b74",
+        "parentUid" : "22a8d3cab6e1237c0b0ed375715a7393",
+        "status" : "passed",
+        "time" : {
+          "start" : 1718734864206,
+          "stop" : 1718734872972,
+          "duration" : 8766
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "d6ed5700fd107a14",
+        "parentUid" : "22a8d3cab6e1237c0b0ed375715a7393",
+        "status" : "passed",
+        "time" : {
+          "start" : 1718734917857,
+          "stop" : 1718734926620,
+          "duration" : 8763
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "abcc037a723767c9",
+        "parentUid" : "22a8d3cab6e1237c0b0ed375715a7393",
+        "status" : "passed",
+        "time" : {
+          "start" : 1718734900511,
+          "stop" : 1718734909407,
+          "duration" : 8896
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "22a8d3cab6e1237c0b0ed375715a7393"
+    }, {
+      "name" : "2292-MainThread",
+      "children" : [ {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "215b610e92815b9e",
+        "parentUid" : "e0b06399dffe655750dbd0b0ce21b229",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719404881429,
+          "stop" : 1719404881429,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "687c7e67e77cb131",
+        "parentUid" : "e0b06399dffe655750dbd0b0ce21b229",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719404881224,
+          "stop" : 1719404881224,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "5f8c7cafd9844f8a",
+        "parentUid" : "e0b06399dffe655750dbd0b0ce21b229",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719404881130,
+          "stop" : 1719404881130,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "2ea4a91013bba1cd",
+        "parentUid" : "e0b06399dffe655750dbd0b0ce21b229",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719404880772,
+          "stop" : 1719404880772,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "c9bb3cd465766adb",
+        "parentUid" : "e0b06399dffe655750dbd0b0ce21b229",
+        "status" : "broken",
+        "time" : {
+          "start" : 1719404881319,
+          "stop" : 1719404881319,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e0b06399dffe655750dbd0b0ce21b229"
+    }, {
+      "name" : "8496-MainThread",
+      "children" : [ {
+        "name" : "Test Authentication",
+        "uid" : "ab63a68844ca30a2",
+        "parentUid" : "8549af70814f483917ba63fabf20cee3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1720287106376,
+          "stop" : 1720287116266,
+          "duration" : 9890
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8549af70814f483917ba63fabf20cee3"
+    } ],
+    "uid" : "13c4610afbe8c246875b16c7d5b09273"
+  }, {
+    "name" : "fv-az768-604",
+    "children" : [ {
+      "name" : "2220-MainThread",
+      "children" : [ {
+        "name" : "test_register_with_time_sleep",
+        "uid" : "3b3d826094470cf9",
+        "parentUid" : "8414f8abd08d4f6ae0880aa44ab29347",
+        "status" : "passed",
+        "time" : {
+          "start" : 1720287316071,
+          "stop" : 1720287326453,
+          "duration" : 10382
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_implicit_waits",
+        "uid" : "367d069f2d78a743",
+        "parentUid" : "8414f8abd08d4f6ae0880aa44ab29347",
+        "status" : "passed",
+        "time" : {
+          "start" : 1720287307492,
+          "stop" : 1720287315809,
+          "duration" : 8317
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_register_with_explicit_waits",
+        "uid" : "4b45f9ab5017f42c",
+        "parentUid" : "8414f8abd08d4f6ae0880aa44ab29347",
+        "status" : "passed",
+        "time" : {
+          "start" : 1720287298763,
+          "stop" : 1720287307232,
+          "duration" : 8469
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_auth_positive",
+        "uid" : "1565e7f0c1f1db23",
+        "parentUid" : "8414f8abd08d4f6ae0880aa44ab29347",
+        "status" : "passed",
+        "time" : {
+          "start" : 1720287281278,
+          "stop" : 1720287289952,
+          "duration" : 8674
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Test Authentication",
+        "uid" : "56a96afa62fbd167",
+        "parentUid" : "8414f8abd08d4f6ae0880aa44ab29347",
+        "status" : "passed",
+        "time" : {
+          "start" : 1720287290046,
+          "stop" : 1720287298449,
+          "duration" : 8403
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8414f8abd08d4f6ae0880aa44ab29347"
+    } ],
+    "uid" : "659b486a9253fd87c1dba0ecba183f8e"
+  } ],
+  "name" : "timeline"
+}
